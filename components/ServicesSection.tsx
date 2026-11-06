@@ -54,7 +54,7 @@ export function ServicesSection({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        <div className="services__quote" id="kontakt">
+        <div className="services__quote">
           <div>
             <h3>{copy.quoteHeading}</h3>
             <p>{copy.quoteDescription}</p>

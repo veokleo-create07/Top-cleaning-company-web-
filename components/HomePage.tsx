@@ -8,6 +8,7 @@ import { WorkPortfolioSection } from "@/components/WorkPortfolioSection";
 import { CustomerTestimonials } from "@/components/CustomerTestimonials";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { FAQSection } from "@/components/FAQSection";
+import { ContactQuoteSection } from "@/components/ContactQuoteSection";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 type HomePageProps = { locale: Locale };
@@ -62,6 +63,7 @@ export function HomePage({ locale }: HomePageProps) {
       <CustomerTestimonials locale={locale} />
       <HowItWorksSection locale={locale} />
       <FAQSection locale={locale} />
+      <ContactQuoteSection locale={locale} />
     </main>
   );
 }
