@@ -62,7 +62,8 @@ h1 span { color: var(--color-slate); }
 .hero__baseline-line { width: min(13vw, 180px); height: 1px; background: #cbd3cf; }
 
 .company-intro { border-top: 1px solid rgba(20, 45, 53, .2); border-bottom: 1px solid rgba(20, 45, 53, .2); padding-block: clamp(4.5rem, 8.5vw, 8rem) clamp(4.5rem, 7vw, 6.5rem); }
-.company-panel { border-radius: 14px; padding: clamp(1.5rem, 4.8vw, 4.5rem); background: var(--color-slate); color: #fff; }
+.company-panel { width: calc(100% - 48px); max-width: none; min-height: 85vh; margin-inline: auto; display: grid; align-items: center; border-radius: 16px; padding: clamp(2.5rem, 5.5vw, 5.5rem); background: var(--color-slate); color: #fff; }
+.company-panel__inner { width: min(100%, 1480px); margin-inline: auto; }
 .company-panel__content { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(2.5rem, 5vw, 5rem); }
 .company-panel__copy { max-width: 620px; }
 .company-panel__eyebrow { margin: 0 0 1.45rem; color: rgba(255,255,255,.7); font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
@@ -142,8 +143,7 @@ h1 span { color: var(--color-slate); }
   .hero__baseline { gap: 0.8rem; padding-bottom: 1.5rem; font-size: 0.65rem; }
   .hero__baseline-line { flex: 1; width: auto; }
   .company-intro { padding-block: 3.5rem 4rem; }
-  .company-panel.page-shell { width: min(100% - 2rem, 1600px); }
-  .company-panel { border-radius: 13px; padding: 1.35rem 1.25rem; }
+  .company-panel { width: calc(100% - 32px); min-height: 0; border-radius: 12px; padding: 1.35rem 1.25rem; }
   .company-panel__content { gap: 1.65rem; }
   .company-panel__eyebrow { margin-bottom: .9rem; font-size: .66rem; }
   .company-panel__heading { font-size: clamp(2.25rem, 7.2vw, 2.9rem); line-height: 1.06; }
@@ -168,7 +168,7 @@ h1 span { color: var(--color-slate); }
   .hero__visual { aspect-ratio: 1.05; }
   .hero__caption span:last-child { display: none; }
   .company-intro { padding-block: 3rem 3.5rem; }
-  .company-panel { border-radius: 12px; padding: 1.2rem 1rem; }
+  .company-panel { padding: 1.2rem 1rem; }
   .company-panel__heading { font-size: clamp(2.1rem, 8.8vw, 2.6rem); }
   .company-panel__figure { aspect-ratio: 1.1; }
 }
