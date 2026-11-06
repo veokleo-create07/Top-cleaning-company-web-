@@ -15,7 +15,7 @@ export function CompanyFeaturePanel({ locale }: { locale: Locale }) {
               <span>{copy.headlineSecond}</span>
             </h2>
             <p className="company-panel__description">{copy.description}</p>
-            <a className="company-panel__link" href="#unternehmen">
+            <a className="company-panel__link" href="#kontakt">
               {copy.link} <span aria-hidden="true">↗</span>
             </a>
           </div>

@@ -35,9 +35,9 @@ export function ServicesSection({ locale }: { locale: Locale }) {
                 <a
                   className="service-item__link"
                   href="#kontakt"
-                  aria-label={`${copy.learnMore} & ${copy.quoteCta}: ${service.title}`}
+                  aria-label={`${copy.serviceLinkLabel}: ${service.title}`}
                 >
-                  {copy.learnMore}<span aria-hidden="true">↗</span>
+                  {copy.serviceLinkLabel}<span aria-hidden="true">↗</span>
                 </a>
               </div>
             </article>
@@ -60,7 +60,6 @@ export function ServicesSection({ locale }: { locale: Locale }) {
             <p>{copy.quoteDescription}</p>
           </div>
           <Button href="#kontakt">{copy.quoteCta}</Button>
-          <p className="services__contact-placeholder">{copy.contactPlaceholder}</p>
         </div>
       </div>
     </section>

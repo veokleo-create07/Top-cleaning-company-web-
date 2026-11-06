@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { LanguageSwitch } from "@/components/LanguageSwitch";
+import { MobileNavigation } from "@/components/MobileNavigation";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
@@ -33,20 +34,13 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           {copy.quote}
         </Button>
 
-        <details className="mobile-nav">
-          <summary aria-label={copy.openMenu}>
-            <span className="mobile-nav__label">{copy.menu}</span>
-            <span className="mobile-nav__icon" aria-hidden="true"><i /><i /></span>
-          </summary>
-          <nav className="mobile-nav__panel" aria-label={copy.mobileLabel}>
-            {links.map((link) => (
-              <Link href={link.href} key={link.href}>
-                {link.label}
-              </Link>
-            ))}
-            <Button href="#kontakt">{copy.quote}</Button>
-          </nav>
-        </details>
+        <MobileNavigation
+          label={copy.mobileLabel}
+          openLabel={copy.openMenu}
+          menuLabel={copy.menu}
+          quoteLabel={copy.quote}
+          links={links}
+        />
       </div>
     </header>
   );

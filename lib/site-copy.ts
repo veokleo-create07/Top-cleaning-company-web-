@@ -27,8 +27,8 @@ export const siteCopy = {
       services: "Our services",
       location: "Based in Lübeck. Here for the surrounding area.",
       imageAlt: "A cleaner caring for the floor of a bright, modern commercial property",
-      imageCaption: "Well-kept spaces. Service you can rely on.",
-      imageLocation: "Lübeck · Schleswig-Holstein",
+      imageCaption: "Illustrative demo image · no TopClean staff pictured",
+      imageLocation: "",
       baselineFirst: "For businesses and properties",
       baselineSecond: "Tailored to your needs",
     },
@@ -38,7 +38,7 @@ export const siteCopy = {
       headlineSecond: "with trust.",
       description:
         "As a family-run cleaning company, we believe in careful work, clear communication and lasting partnerships. We look after businesses, medical practices, properties and private homes in Lübeck and the surrounding area.",
-      link: "More about us",
+      link: "Get in touch",
       imageAlt: "A cleaner wiping a glass wall in a bright, modern interior",
       imageCaption: "Demo image · no TopClean employees are pictured",
       valuesLabel: "What sets TopClean apart",
@@ -80,7 +80,7 @@ export const siteCopy = {
           imageAlt: "A cleaner mopping a sunlit apartment building entrance hall",
         },
       ],
-      learnMore: "Learn more",
+      serviceLinkLabel: "Request this service",
       moreLabel: "Explore all cleaning services",
       moreHeading: "More ways we can help",
       moreDescription:
@@ -88,7 +88,6 @@ export const siteCopy = {
       quoteHeading: "A clean space starts with a good plan.",
       quoteDescription: "Tell us about your property and we’ll prepare a tailored, no-obligation quote.",
       quoteCta: "Request a free quote",
-      contactPlaceholder: "The enquiry form will be added here in the next stage of the demo.",
     },
     work: {
       eyebrow: "Our work",
@@ -292,8 +291,8 @@ export const siteCopy = {
       services: "Unsere Leistungen",
       location: "Aus Lübeck. Für Lübeck und Umgebung.",
       imageAlt: "Reinigungskraft pflegt den Boden in einer hellen, modernen Gewerbeimmobilie",
-      imageCaption: "Gepflegte Räume. Verlässlicher Service.",
-      imageLocation: "Lübeck · Schleswig-Holstein",
+      imageCaption: "Illustrative Demoaufnahme · keine TopClean-Mitarbeitenden abgebildet",
+      imageLocation: "",
       baselineFirst: "Für Unternehmen und Immobilien",
       baselineSecond: "Individuell abgestimmt",
     },
@@ -303,7 +302,7 @@ export const siteCopy = {
       headlineSecond: "mit Vertrauen.",
       description:
         "Als familiengeführtes Reinigungsunternehmen stehen wir für sorgfältige Arbeit, klare Kommunikation und langfristige Zusammenarbeit. Wir betreuen Unternehmen, Praxen, Immobilien und private Objekte in Lübeck und Umgebung.",
-      link: "Mehr über uns",
+      link: "Kontakt aufnehmen",
       imageAlt: "Reinigungskraft wischt eine Glaswand in einem hellen, modernen Innenraum",
       imageCaption: "Demoaufnahme · keine Mitarbeitenden von TopClean abgebildet",
       valuesLabel: "Was TopClean auszeichnet",
@@ -345,7 +344,7 @@ export const siteCopy = {
           imageAlt: "Reinigungskraft wischt eine sonnige Eingangshalle eines Wohngebäudes",
         },
       ],
-      learnMore: "Mehr erfahren",
+      serviceLinkLabel: "Leistung anfragen",
       moreLabel: "Alle Reinigungsleistungen entdecken",
       moreHeading: "Weitere Leistungen",
       moreDescription:
@@ -353,7 +352,6 @@ export const siteCopy = {
       quoteHeading: "Gute Reinigung beginnt mit einem klaren Plan.",
       quoteDescription: "Erzählen Sie uns von Ihrem Objekt – wir erstellen ein individuelles und unverbindliches Angebot.",
       quoteCta: "Kostenloses Angebot anfordern",
-      contactPlaceholder: "Das Anfrageformular wird in der nächsten Ausbaustufe ergänzt.",
     },
     work: {
       eyebrow: "Unsere Arbeit",

@@ -27,52 +27,43 @@ export function HeroPanelScrollTransition({ hero, introduction }: HeroPanelScrol
     if (!root || !heroElement || !introductionElement || !panel) return;
 
     const media = gsap.matchMedia();
-    media.add(
-      {
-        desktop: "(min-width: 861px)",
-        mobile: "(max-width: 860px)",
-        motion: "(prefers-reduced-motion: no-preference)",
-      },
-      ({ conditions }) => {
-        const { desktop, motion } = conditions as { desktop: boolean; mobile: boolean; motion: boolean };
-        if (!motion) return;
+    media.add("(min-width: 861px) and (pointer: fine) and (prefers-reduced-motion: no-preference)", () => {
+      const panelOffset = () => Math.min(window.innerHeight * 0.18, 180);
+      const panelTravel = () => {
+        const currentY = Number(gsap.getProperty(introductionElement, "y")) || 0;
+        return Math.max(1, panel.getBoundingClientRect().top - heroElement.getBoundingClientRect().top - currentY);
+      };
 
-        const panelOffset = () => Math.min(window.innerHeight * (desktop ? 0.18 : 0.12), desktop ? 180 : 96);
-        const panelTravel = () => {
-          const currentY = Number(gsap.getProperty(introductionElement, "y")) || 0;
-          return Math.max(1, panel.getBoundingClientRect().top - heroElement.getBoundingClientRect().top - currentY);
-        };
+      root.classList.add("hero-panel-transition--active");
+      gsap.fromTo(
+        introductionElement,
+        { y: panelOffset },
+        {
+          y: 0,
+          immediateRender: false,
+          ease: "none",
+          scrollTrigger: {
+            trigger: heroElement,
+            start: "top top",
+            end: () => `+=${panelTravel()}`,
+            pin: heroElement,
+            pinSpacing: false,
+            scrub: true,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+          },
+        },
+      );
 
-        root.classList.add("hero-panel-transition--active");
-        const context = gsap.context(() => {
-          gsap.fromTo(
-            introductionElement,
-            { y: panelOffset },
-            {
-              y: 0,
-              ease: "none",
-              scrollTrigger: {
-                trigger: heroElement,
-                start: "top top",
-                end: () => `+=${panelTravel()}`,
-                pin: heroElement,
-                pinSpacing: false,
-                scrub: true,
-                anticipatePin: 1,
-                invalidateOnRefresh: true,
-              },
-            },
-          );
-        }, root);
+      return () => {
+        root.classList.remove("hero-panel-transition--active");
+      };
+    });
 
-        return () => {
-          context.revert();
-          root.classList.remove("hero-panel-transition--active");
-        };
-      },
-    );
-
-    return () => media.revert();
+    return () => {
+      media.revert();
+      introductionElement.removeAttribute("style");
+    };
   }, []);
 
   return (
