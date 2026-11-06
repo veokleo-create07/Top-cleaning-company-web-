@@ -1,4 +1,5 @@
 import { siteCopy, type Locale } from "@/lib/site-copy";
+import { Button } from "@/components/Button";
 
 export function CustomerTestimonials({ locale }: { locale: Locale }) {
   const copy = siteCopy[locale].testimonials;
@@ -44,7 +45,7 @@ export function CustomerTestimonials({ locale }: { locale: Locale }) {
 
         <div className="testimonials__cta">
           <p>{copy.ctaPrompt}</p>
-          <a href="#kontakt">{copy.ctaLabel}<span aria-hidden="true"> ↗</span></a>
+          <Button href="#kontakt" variant="secondary">{copy.ctaLabel}</Button>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/Button";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 export function FAQSection({ locale }: { locale: Locale }) {
@@ -56,7 +57,7 @@ export function FAQSection({ locale }: { locale: Locale }) {
 
           <div className="faq-section__contact">
             <p>{copy.contactPrompt}</p>
-            <a href="#kontakt">{copy.contactLink}<span aria-hidden="true"> ↗</span></a>
+            <Button href="#kontakt" variant="secondary">{copy.contactLink}</Button>
           </div>
         </div>
       </div>

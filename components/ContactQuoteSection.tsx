@@ -75,8 +75,8 @@ export function ContactQuoteSection({ locale }: { locale: Locale }) {
                 </div>
               </address>
 
-              <a className="contact-panel__whatsapp" href="https://wa.me/4917623483923" target="_blank" rel="noreferrer">
-                {copy.whatsapp}<span aria-hidden="true"> ↗</span>
+              <a className="button button--inverse contact-panel__whatsapp" href="https://wa.me/4917623483923" target="_blank" rel="noreferrer">
+                {copy.whatsapp}
               </a>
             </div>
 

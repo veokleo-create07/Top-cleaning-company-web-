@@ -30,20 +30,21 @@ export function ServicesSection({ locale }: { locale: Locale }) {
               <div className="service-item__body">
                 <h3 className="service-item__heading">{service.title}</h3>
                 <p className="service-item__description">{service.description}</p>
-                <a
+                <Button
                   className="service-item__link"
                   href="#kontakt"
+                  variant="secondary"
                   aria-label={`${copy.serviceLinkLabel}: ${service.title}`}
                 >
-                  {copy.serviceLinkLabel}<span aria-hidden="true">↗</span>
-                </a>
+                  {copy.serviceLinkLabel}
+                </Button>
               </div>
             </article>
           ))}
         </div>
 
         <div className="services__more-link">
-          <a href="#weitere-leistungen">{copy.moreLabel}<span aria-hidden="true">↗</span></a>
+          <Button href="#weitere-leistungen" variant="secondary">{copy.moreLabel}</Button>
         </div>
         <div className="services__more" id="weitere-leistungen">
           <div>

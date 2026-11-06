@@ -4,7 +4,7 @@ import type { AnchorHTMLAttributes, ReactNode } from "react";
 type ButtonProps = {
   href: string;
   children: ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "inverse";
   className?: string;
 } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "children">;
 

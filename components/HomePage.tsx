@@ -49,7 +49,7 @@ export function HomePage({ locale }: HomePageProps) {
                 <p className="hero__description">{copy.hero.description}</p>
                 <div className="hero__actions">
                   <Button href="#kontakt">{copy.hero.quote}</Button>
-                  <Button href="#leistungen" variant="secondary" className="hero__secondary">{copy.hero.services} <span aria-hidden="true">↗</span></Button>
+                  <Button href="#leistungen" variant="secondary" className="hero__secondary">{copy.hero.services}</Button>
                 </div>
               </div>
 

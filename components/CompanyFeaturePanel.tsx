@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/Button";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 export function CompanyFeaturePanel({ locale }: { locale: Locale }) {
@@ -14,9 +15,9 @@ export function CompanyFeaturePanel({ locale }: { locale: Locale }) {
               <span>{copy.headlineSecond}</span>
             </h2>
             <p className="company-panel__description">{copy.description}</p>
-            <a className="company-panel__link" href="#kontakt">
-              {copy.link} <span aria-hidden="true">↗</span>
-            </a>
+            <Button href="#kontakt" variant="inverse" className="company-panel__link">
+              {copy.link}
+            </Button>
           </div>
 
           <figure className="company-panel__figure">
