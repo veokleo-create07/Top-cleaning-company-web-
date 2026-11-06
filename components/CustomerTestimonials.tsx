@@ -8,7 +8,6 @@ export function CustomerTestimonials({ locale }: { locale: Locale }) {
     <section className="testimonials" id="kundenstimmen" aria-labelledby="testimonials-heading">
       <div className="page-shell">
         <header className="testimonials__header">
-          <p className="testimonials__eyebrow"><span aria-hidden="true" />{copy.eyebrow}</p>
           <h2 id="testimonials-heading">{copy.headline}</h2>
           <p className="testimonials__introduction">{copy.introduction}</p>
         </header>

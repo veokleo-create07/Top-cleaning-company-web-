@@ -18,22 +18,16 @@ export const siteCopy = {
       mobileLabel: "Mobile navigation",
     },
     hero: {
-      eyebrow: "Commercial cleaning in Lübeck & the surrounding area",
       headlineFirst: "Clean spaces.",
       headlineSecond: "A strong impression.",
       description:
         "Professional cleaning for businesses, medical practices and properties in Lübeck and the surrounding area — reliable, thorough and tailored to your needs.",
       quote: "Request a free quote",
       services: "Our services",
-      location: "Based in Lübeck. Here for the surrounding area.",
       imageAlt: "A cleaner caring for the floor of a bright, modern commercial property",
       imageCaption: "Illustrative demo image · no TopClean staff pictured",
-      imageLocation: "",
-      baselineFirst: "For businesses and properties",
-      baselineSecond: "Tailored to your needs",
     },
     company: {
-      eyebrow: "About TopClean",
       headlineFirst: "Clean spaces start",
       headlineSecond: "with trust.",
       description:
@@ -49,11 +43,9 @@ export const siteCopy = {
       ],
     },
     services: {
-      eyebrow: "Our services",
       headline: "Professional cleaning for every space.",
       introduction:
         "From everyday workspaces to guest-ready apartments, we tailor the cleaning to your property and the way it is used.",
-      demoNote: "Illustrative demo photography · no TopClean staff or client properties are pictured",
       items: [
         {
           title: "Office & commercial cleaning",
@@ -90,12 +82,10 @@ export const siteCopy = {
       quoteCta: "Request a free quote",
     },
     work: {
-      eyebrow: "Our work",
       headline: "Results that speak for themselves.",
       introduction:
         "Explore the before-and-after sliders with illustrative demo imagery. Authentic project photos will replace these examples when supplied.",
-      demoNote:
-        "Demo imagery only · these sliders are visual prototypes, not records of real TopClean work or results.",
+      demoNote: "Illustrative demo imagery only · not documented TopClean work or results.",
       before: "Before",
       after: "After",
       sliderLabel: "Before and after comparison for",
@@ -131,7 +121,6 @@ export const siteCopy = {
       ],
     },
     testimonials: {
-      eyebrow: "Customer reviews",
       headline: "Trust that lasts.",
       introduction: "A few words from people who have experienced our cleaning services.",
       pendingQuote: "The original commercial-cleaning review is awaiting source verification.",
@@ -161,7 +150,6 @@ export const siteCopy = {
       ],
     },
     process: {
-      eyebrow: "How it works",
       headline: "Cleanliness starts with a conversation.",
       introduction: "A clear, personal path from your first enquiry to the agreed cleaning work.",
       cta: "Request a free quote",
@@ -173,7 +161,6 @@ export const siteCopy = {
       ],
     },
     faq: {
-      eyebrow: "Frequently asked questions",
       headline: "Good to know.",
       introduction: "Answers about services, coverage and getting started with TopClean. If you need more detail, we’re happy to hear from you.",
       contactPrompt: "Still have a question? We’ll be happy to advise you personally.",
@@ -206,7 +193,6 @@ export const siteCopy = {
       ],
     },
     contactForm: {
-      eyebrow: "Contact",
       headline: "Let’s talk about your property.",
       introduction: "TopClean tailors its cleaning services to your property, its needs and the work you have in mind.",
       phoneLabel: "Phone",
@@ -282,22 +268,16 @@ export const siteCopy = {
       mobileLabel: "Mobile Navigation",
     },
     hero: {
-      eyebrow: "Gebäudereinigung in Lübeck & Umgebung",
       headlineFirst: "Saubere Räume.",
       headlineSecond: "Ein starker Auftritt.",
       description:
         "Professionelle Reinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung – zuverlässig, gründlich und individuell abgestimmt.",
       quote: "Kostenloses Angebot anfordern",
       services: "Unsere Leistungen",
-      location: "Aus Lübeck. Für Lübeck und Umgebung.",
       imageAlt: "Reinigungskraft pflegt den Boden in einer hellen, modernen Gewerbeimmobilie",
       imageCaption: "Illustrative Demoaufnahme · keine TopClean-Mitarbeitenden abgebildet",
-      imageLocation: "",
-      baselineFirst: "Für Unternehmen und Immobilien",
-      baselineSecond: "Individuell abgestimmt",
     },
     company: {
-      eyebrow: "Über TopClean",
       headlineFirst: "Sauberkeit beginnt",
       headlineSecond: "mit Vertrauen.",
       description:
@@ -313,11 +293,9 @@ export const siteCopy = {
       ],
     },
     services: {
-      eyebrow: "Unsere Leistungen",
       headline: "Professionelle Reinigung für jeden Anspruch.",
       introduction:
         "Von Arbeitsräumen bis zu ferienfertigen Wohnungen: Wir stimmen die Reinigung auf Ihre Räume und Abläufe ab.",
-      demoNote: "Illustrative Demoaufnahmen · keine TopClean-Mitarbeitenden oder Kundenobjekte abgebildet",
       items: [
         {
           title: "Büro- & Gewerbereinigung",
@@ -354,12 +332,10 @@ export const siteCopy = {
       quoteCta: "Kostenloses Angebot anfordern",
     },
     work: {
-      eyebrow: "Unsere Arbeit",
       headline: "Ergebnisse, die für sich sprechen.",
       introduction:
         "Entdecken Sie die Vorher-Nachher-Slider anhand illustrativer Demoaufnahmen. Sobald authentische Projektfotos vorliegen, ersetzen sie diese Beispiele.",
-      demoNote:
-        "Nur Demoaufnahmen · die Slider sind visuelle Muster, keine Belege für echte TopClean-Aufträge oder Reinigungsergebnisse.",
+      demoNote: "Illustrative Demoaufnahmen · keine dokumentierten TopClean-Aufträge oder Reinigungsergebnisse.",
       before: "Vorher",
       after: "Nachher",
       sliderLabel: "Vorher-Nachher-Vergleich für",
@@ -395,7 +371,6 @@ export const siteCopy = {
       ],
     },
     testimonials: {
-      eyebrow: "Kundenstimmen",
       headline: "Vertrauen, das bleibt.",
       introduction: "Einblicke in die Erfahrungen unserer Kundinnen und Kunden.",
       pendingQuote: "Der Originalwortlaut der gewerblichen Bewertung steht noch zur Quellenprüfung aus.",
@@ -423,7 +398,6 @@ export const siteCopy = {
       ],
     },
     process: {
-      eyebrow: "So funktioniert’s",
       headline: "Sauberkeit beginnt mit einem Gespräch.",
       introduction: "In vier klaren Schritten – vom ersten Kontakt bis zu den vereinbarten Reinigungsarbeiten.",
       cta: "Kostenloses Angebot anfordern",
@@ -435,7 +409,6 @@ export const siteCopy = {
       ],
     },
     faq: {
-      eyebrow: "Häufige Fragen",
       headline: "Gut zu wissen.",
       introduction: "Hier finden Sie Antworten zu Leistungen, Einsatzgebiet und dem Start mit TopClean. Wenn Sie mehr wissen möchten, sprechen Sie uns gerne an.",
       contactPrompt: "Noch Fragen? Wir beraten Sie gerne persönlich.",
@@ -468,7 +441,6 @@ export const siteCopy = {
       ],
     },
     contactForm: {
-      eyebrow: "Kontakt",
       headline: "Lassen Sie uns über Ihr Objekt sprechen.",
       introduction: "TopClean stimmt die Reinigungsleistungen individuell auf Ihr Objekt, den Bedarf und den gewünschten Umfang ab.",
       phoneLabel: "Telefon",

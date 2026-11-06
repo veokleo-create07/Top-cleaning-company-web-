@@ -57,7 +57,6 @@ export function ContactQuoteSection({ locale }: { locale: Locale }) {
         <div className="contact-panel__inner">
           <div className="contact-panel__layout">
             <div className="contact-panel__copy">
-              <p className="contact-panel__eyebrow"><span aria-hidden="true" />{copy.eyebrow}</p>
               <h2 id="contact-heading">{copy.headline}</h2>
               <p className="contact-panel__intro">{copy.introduction}</p>
 

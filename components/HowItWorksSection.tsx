@@ -8,7 +8,6 @@ export function HowItWorksSection({ locale }: { locale: Locale }) {
     <section className="process-section" id="ablauf" aria-labelledby="process-heading">
       <div className="page-shell">
         <header className="process-section__header">
-          <p className="process-section__eyebrow"><span aria-hidden="true" />{copy.eyebrow}</p>
           <h2 id="process-heading">{copy.headline}</h2>
           <p className="process-section__intro">{copy.introduction}</p>
         </header>

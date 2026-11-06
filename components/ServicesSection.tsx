@@ -9,11 +9,9 @@ export function ServicesSection({ locale }: { locale: Locale }) {
     <section className="services" id="leistungen" aria-labelledby="services-heading">
       <div className="page-shell">
         <header className="services__header">
-          <p className="services__eyebrow"><span aria-hidden="true" />{copy.eyebrow}</p>
           <h2 className="services__heading" id="services-heading">{copy.headline}</h2>
           <div className="services__intro">
             <p>{copy.introduction}</p>
-            <p className="services__demo-note">{copy.demoNote}</p>
           </div>
         </header>
 

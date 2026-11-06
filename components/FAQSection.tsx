@@ -11,7 +11,6 @@ export function FAQSection({ locale }: { locale: Locale }) {
     <section className="faq-section" id="fragen" aria-labelledby="faq-heading">
       <div className="page-shell faq-section__layout">
         <header className="faq-section__header">
-          <p className="faq-section__eyebrow"><span aria-hidden="true" />{copy.eyebrow}</p>
           <h2 id="faq-heading">{copy.headline}</h2>
           <p className="faq-section__intro">{copy.introduction}</p>
         </header>

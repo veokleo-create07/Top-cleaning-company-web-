@@ -8,7 +8,6 @@ export function WorkPortfolioSection({ locale }: { locale: Locale }) {
     <section className="work-section" id="arbeit" aria-labelledby="work-heading">
       <div className="page-shell">
         <header className="work-section__header">
-          <p className="work-section__eyebrow"><span aria-hidden="true" />{copy.eyebrow}</p>
           <h2 id="work-heading">{copy.headline}</h2>
           <div className="work-section__intro">
             <p>{copy.introduction}</p>

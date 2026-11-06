@@ -9,7 +9,6 @@ export function CompanyFeaturePanel({ locale }: { locale: Locale }) {
       <div className="company-panel__inner">
         <div className="company-panel__content">
           <div className="company-panel__copy">
-            <p className="company-panel__eyebrow">{copy.eyebrow}</p>
             <h2 className="company-panel__heading" id="company-intro-heading">
               <span>{copy.headlineFirst}</span>
               <span>{copy.headlineSecond}</span>
