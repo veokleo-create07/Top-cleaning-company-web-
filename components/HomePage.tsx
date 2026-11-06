@@ -5,6 +5,7 @@ import { HeroPanelScrollTransition } from "@/components/HeroPanelScrollTransitio
 import { SiteHeader } from "@/components/SiteHeader";
 import { ServicesSection } from "@/components/ServicesSection";
 import { WorkPortfolioSection } from "@/components/WorkPortfolioSection";
+import { CustomerTestimonials } from "@/components/CustomerTestimonials";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 type HomePageProps = { locale: Locale };
@@ -56,6 +57,7 @@ export function HomePage({ locale }: HomePageProps) {
       />
       <ServicesSection locale={locale} />
       <WorkPortfolioSection locale={locale} />
+      <CustomerTestimonials locale={locale} />
     </main>
   );
 }

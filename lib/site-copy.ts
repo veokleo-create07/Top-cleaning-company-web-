@@ -131,6 +131,36 @@ export const siteCopy = {
         },
       ],
     },
+    testimonials: {
+      eyebrow: "Customer reviews",
+      headline: "Trust that lasts.",
+      introduction: "A few words from people who have experienced our cleaning services.",
+      pendingQuote: "The original commercial-cleaning review is awaiting source verification.",
+      ctaPrompt: "Looking for a dependable cleaning partner?",
+      ctaLabel: "Request a free quote",
+      items: [
+        {
+          name: "Ruschwan F.",
+          service: "Commercial cleaning",
+          quote: null,
+          quoteLanguage: "de",
+        },
+        {
+          name: "Kemal M.",
+          service: "Window cleaning",
+          quote: "A quick appointment, fast and professional window cleaning at a fair price — very friendly and pleasant. Highly recommended!",
+          quoteLanguage: "en",
+          translationNote: "Translated from German",
+        },
+        {
+          name: "Lenny H.",
+          service: "Cleaning services",
+          quote: "Thank you for the excellent cleaning of the windows — especially the floor and stair railings, too. Great price!",
+          quoteLanguage: "en",
+          translationNote: "Translated from German",
+        },
+      ],
+    },
   },
   de: {
     metadata: {
@@ -259,6 +289,34 @@ export const siteCopy = {
           image: "/images/service-building-demo.jpg",
           alt: "Illustrative Aufnahme einer Reinigungskraft bei der Pflege eines gemeinsamen Gebäudeeingangs",
           position: "43% 50%",
+        },
+      ],
+    },
+    testimonials: {
+      eyebrow: "Kundenstimmen",
+      headline: "Vertrauen, das bleibt.",
+      introduction: "Einblicke in die Erfahrungen unserer Kundinnen und Kunden.",
+      pendingQuote: "Der Originalwortlaut der gewerblichen Bewertung steht noch zur Quellenprüfung aus.",
+      ctaPrompt: "Sie suchen einen zuverlässigen Reinigungspartner?",
+      ctaLabel: "Kostenloses Angebot anfordern",
+      items: [
+        {
+          name: "Ruschwan F.",
+          service: "Gewerbereinigung",
+          quote: null,
+          quoteLanguage: "de",
+        },
+        {
+          name: "Kemal M.",
+          service: "Fensterreinigung",
+          quote: "Super schnell ein Termin, schnelle und professionelle Fensterreinigung zu fairen Preisen – sehr sympathisch und angenehm. Auf jeden Fall weiterzuempfehlen!",
+          quoteLanguage: "de",
+        },
+        {
+          name: "Lenny H.",
+          service: "Reinigungsservices",
+          quote: "Vielen Dank für die super Reinigung der Scheiben – insbesondere auch Fußboden und Treppengeländer. Top Preis!",
+          quoteLanguage: "de",
         },
       ],
     },
