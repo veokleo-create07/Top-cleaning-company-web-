@@ -9,6 +9,7 @@ import { CustomerTestimonials } from "@/components/CustomerTestimonials";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ContactQuoteSection } from "@/components/ContactQuoteSection";
+import { SiteFooter } from "@/components/SiteFooter";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 type HomePageProps = { locale: Locale };
@@ -64,6 +65,7 @@ export function HomePage({ locale }: HomePageProps) {
       <HowItWorksSection locale={locale} />
       <FAQSection locale={locale} />
       <ContactQuoteSection locale={locale} />
+      <SiteFooter locale={locale} />
     </main>
   );
 }

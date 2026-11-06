@@ -394,6 +394,53 @@ h1 span { color: var(--color-slate); }
   .contact-form__consent { margin-top: 1rem; }
   .contact-form__submit { width: 100%; min-height: 52px; margin-top: .8rem; white-space: normal; text-align: center; }
 }
+.site-footer { padding-block: clamp(3.5rem, 6vw, 5.75rem) 1.25rem; background: var(--color-background); color: var(--color-slate); }
+.site-footer__main { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(8rem, .62fr) minmax(14rem, .8fr); gap: clamp(2.5rem, 6vw, 6.5rem); padding-bottom: clamp(2.5rem, 4vw, 4rem); }
+.site-footer__brand-name { display: inline-block; color: var(--color-slate); font-size: clamp(2.25rem, 3.2vw, 3.1rem); font-weight: 740; letter-spacing: -.075em; line-height: 1; }
+.site-footer__descriptor { margin: .35rem 0 0; color: #536167; font-size: .65rem; font-weight: 570; letter-spacing: .12em; text-transform: uppercase; }
+.site-footer__description { max-width: 440px; margin: 1.25rem 0 0; color: #58676c; font-size: .9rem; line-height: 1.68; }
+.site-footer__nav h2,
+.site-footer__contact h2 { margin: .25rem 0 1.1rem; color: var(--color-slate); font-size: .72rem; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; }
+.site-footer__nav ul { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.site-footer__nav a,
+.site-footer__contact a { display: inline-flex; align-items: center; min-height: 36px; width: fit-content; color: #536167; font-size: .88rem; line-height: 1.5; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: color 160ms ease, text-decoration-color 160ms ease; }
+.site-footer__nav a:hover,
+.site-footer__contact a:hover { color: var(--color-slate); text-decoration-color: rgba(20, 45, 53, .42); }
+.site-footer__nav a:focus-visible,
+.site-footer__contact a:focus-visible,
+.site-footer__brand-name:focus-visible,
+.site-footer__legal a:focus-visible { outline: 2px solid #236174; outline-offset: 3px; }
+.site-footer__contact { display: flex; flex-direction: column; align-items: flex-start; font-style: normal; }
+.site-footer__contact p { margin: 0 0 .6rem; color: #536167; font-size: .88rem; line-height: 1.65; }
+.site-footer__bottom { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; padding-top: 1rem; border-top: 1px solid rgba(20, 45, 53, .2); }
+.site-footer__copyright { margin: 0; color: #647176; font-size: .75rem; line-height: 1.5; }
+.site-footer__legal { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.35rem; }
+.site-footer__legal a { display: inline-flex; align-items: center; min-height: 40px; color: #536167; font-size: .75rem; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: color 160ms ease, text-decoration-color 160ms ease; }
+.site-footer__legal a:hover { color: var(--color-slate); text-decoration-color: rgba(20, 45, 53, .42); }
+.site-footer__wordmark { overflow: hidden; margin: clamp(2rem, 4vw, 3.75rem) 0 0; color: rgba(20, 45, 53, .09); font-size: clamp(4rem, 10vw, 9.25rem); font-weight: 750; letter-spacing: -.095em; line-height: .84; white-space: nowrap; }
+@media (max-width: 860px) {
+  .site-footer__main { grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 2.5rem 3rem; }
+  .site-footer__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+  .site-footer { padding-block: 3rem 1rem; }
+  .site-footer__main { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; padding-bottom: 2rem; }
+  .site-footer__brand { grid-column: auto; }
+  .site-footer__brand-name { font-size: 2.45rem; }
+  .site-footer__description { max-width: 34rem; margin-top: .85rem; font-size: .87rem; }
+  .site-footer__nav,
+  .site-footer__contact { padding-top: 1.2rem; border-top: 1px solid rgba(20, 45, 53, .16); }
+  .site-footer__nav h2,
+  .site-footer__contact h2 { margin-top: 0; margin-bottom: .7rem; }
+  .site-footer__nav ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1rem; }
+  .site-footer__contact { gap: .05rem; }
+  .site-footer__contact p { margin-bottom: .35rem; }
+  .site-footer__contact a { min-height: 40px; }
+  .site-footer__bottom { align-items: flex-start; flex-direction: column; gap: .45rem; padding-top: .8rem; }
+  .site-footer__legal { gap: .25rem 1.1rem; }
+  .site-footer__legal a { min-height: 40px; }
+  .site-footer__wordmark { margin-top: 1.75rem; font-size: clamp(3.6rem, 16vw, 5rem); }
+}
 @media (max-width: 760px) {
   .faq-section { padding-block: 4rem; }
   .faq-section__layout { grid-template-columns: minmax(0, 1fr); row-gap: 2.3rem; }
