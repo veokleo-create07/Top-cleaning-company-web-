@@ -48,6 +48,48 @@ export const siteCopy = {
         { title: "Lübeck & beyond", description: "Rooted locally and flexible on site." },
       ],
     },
+    services: {
+      eyebrow: "Our services",
+      headline: "Professional cleaning for every space.",
+      introduction:
+        "From everyday workspaces to guest-ready apartments, we tailor the cleaning to your property and the way it is used.",
+      demoNote: "Illustrative demo photography · no TopClean staff or client properties are pictured",
+      items: [
+        {
+          title: "Office & commercial cleaning",
+          description: "A clean, welcoming environment for teams, clients and visitors.",
+          image: "/images/service-office-demo.jpg",
+          imageAlt: "A cleaner mopping the floor in a bright, modern office",
+        },
+        {
+          title: "Medical practice cleaning",
+          description: "Thoughtful cleaning for practices and healthcare environments.",
+          image: "/images/service-practice-demo.jpg",
+          imageAlt: "A cleaner wiping a reception counter in a contemporary medical practice",
+        },
+        {
+          title: "Holiday apartment cleaning",
+          description: "Careful changeover cleaning that gets each apartment ready for the next stay.",
+          image: "/images/service-holiday-demo.jpg",
+          imageAlt: "A cleaner preparing a bright holiday apartment bedroom for incoming guests",
+        },
+        {
+          title: "Building & regular cleaning",
+          description: "Reliable upkeep for properties, shared areas and everyday use.",
+          image: "/images/service-building-demo.jpg",
+          imageAlt: "A cleaner mopping a sunlit apartment building entrance hall",
+        },
+      ],
+      learnMore: "Learn more",
+      moreLabel: "Explore all cleaning services",
+      moreHeading: "More ways we can help",
+      moreDescription:
+        "We also offer specialist cleaning and outdoor maintenance. Tell us what your property needs and we can discuss a suitable scope.",
+      quoteHeading: "A clean space starts with a good plan.",
+      quoteDescription: "Tell us about your property and we’ll prepare a tailored, no-obligation quote.",
+      quoteCta: "Request a free quote",
+      contactPlaceholder: "The enquiry form will be added here in the next stage of the demo.",
+    },
   },
   de: {
     metadata: {
@@ -95,6 +137,48 @@ export const siteCopy = {
         { title: "Strukturierte Abläufe", description: "Klare Planung und zuverlässige Durchführung." },
         { title: "Lübeck & Umgebung", description: "Regional verwurzelt und flexibel im Einsatz." },
       ],
+    },
+    services: {
+      eyebrow: "Unsere Leistungen",
+      headline: "Professionelle Reinigung für jeden Anspruch.",
+      introduction:
+        "Von Arbeitsräumen bis zu ferienfertigen Wohnungen: Wir stimmen die Reinigung auf Ihre Räume und Abläufe ab.",
+      demoNote: "Illustrative Demoaufnahmen · keine TopClean-Mitarbeitenden oder Kundenobjekte abgebildet",
+      items: [
+        {
+          title: "Büro- & Gewerbereinigung",
+          description: "Ein gepflegtes Umfeld für Mitarbeitende, Kundschaft und Gäste.",
+          image: "/images/service-office-demo.jpg",
+          imageAlt: "Reinigungskraft wischt den Boden in einem hellen, modernen Büro",
+        },
+        {
+          title: "Praxisreinigung",
+          description: "Sorgfältige Reinigung für Praxen und medizinische Einrichtungen.",
+          image: "/images/service-practice-demo.jpg",
+          imageAlt: "Reinigungskraft wischt den Empfangstresen einer modernen Praxis",
+        },
+        {
+          title: "Ferienwohnungsreinigung",
+          description: "Gründliche Wechselreinigung für einen guten Start in den nächsten Aufenthalt.",
+          image: "/images/service-holiday-demo.jpg",
+          imageAlt: "Reinigungskraft bereitet ein helles Schlafzimmer einer Ferienwohnung für neue Gäste vor",
+        },
+        {
+          title: "Gebäude- & Unterhaltsreinigung",
+          description: "Zuverlässige Pflege von Immobilien und gemeinschaftlich genutzten Bereichen.",
+          image: "/images/service-building-demo.jpg",
+          imageAlt: "Reinigungskraft wischt eine sonnige Eingangshalle eines Wohngebäudes",
+        },
+      ],
+      learnMore: "Mehr erfahren",
+      moreLabel: "Alle Reinigungsleistungen entdecken",
+      moreHeading: "Weitere Leistungen",
+      moreDescription:
+        "Zusätzlich übernehmen wir Sonderreinigungen und Außenpflege. Gemeinsam besprechen wir, welche Aufgaben zu Ihrer Immobilie passen.",
+      quoteHeading: "Gute Reinigung beginnt mit einem klaren Plan.",
+      quoteDescription: "Erzählen Sie uns von Ihrem Objekt – wir erstellen ein individuelles und unverbindliches Angebot.",
+      quoteCta: "Kostenloses Angebot anfordern",
+      contactPlaceholder: "Das Anfrageformular wird in der nächsten Ausbaustufe ergänzt.",
     },
   },
 } satisfies Record<Locale, unknown>;

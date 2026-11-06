@@ -3,6 +3,7 @@ import { Button } from "@/components/Button";
 import { CompanyIntroduction } from "@/components/CompanyIntroduction";
 import { HeroPanelScrollTransition } from "@/components/HeroPanelScrollTransition";
 import { SiteHeader } from "@/components/SiteHeader";
+import { ServicesSection } from "@/components/ServicesSection";
 import { siteCopy, type Locale } from "@/lib/site-copy";
 
 type HomePageProps = { locale: Locale };
@@ -52,6 +53,7 @@ export function HomePage({ locale }: HomePageProps) {
         }
         introduction={<CompanyIntroduction locale={locale} />}
       />
+      <ServicesSection locale={locale} />
     </main>
   );
 }
