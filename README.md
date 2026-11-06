@@ -16,4 +16,4 @@ npm run typecheck
 npm run build
 ```
 
-The hero photo in `public/images/hero-cleaning.jpg` is a generated visual created for this demo. Replace it with an approved company photograph before using the site as a live representation of TopClean's team or work.
+The photos in `public/images/hero-cleaning.jpg` and `public/images/company-introduction-demo.jpg` are generated visuals created for this demo. The company-introduction image is labeled on the page as a demo and does not depict TopClean staff. Replace both with approved company photography before using the site as a live representation of TopClean's team or work.

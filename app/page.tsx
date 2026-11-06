@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
+import { CompanyIntroduction } from "@/components/CompanyIntroduction";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
         <span className="hero__baseline-line" />
         <span>Individuell abgestimmt</span>
       </div>
+      <CompanyIntroduction />
     </main>
   );
 }
