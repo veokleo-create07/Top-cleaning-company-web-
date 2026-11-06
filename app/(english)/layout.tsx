@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import "@fontsource-variable/inter";
-import "./globals.css";
+import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "TopClean Gebäudeservice | Gebäudereinigung in Lübeck",
+  title: "TopClean Building Services | Commercial Cleaning in Lübeck",
   description:
-    "Professionelle Reinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung.",
+    "Professional cleaning for businesses, medical practices and properties in Lübeck and the surrounding area.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

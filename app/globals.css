@@ -34,6 +34,11 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #236174; outline-off
 .desktop-nav { display: flex; align-items: center; gap: clamp(1.6rem, 3vw, 3.25rem); margin-left: auto; margin-right: clamp(1.25rem, 3vw, 3rem); }
 .desktop-nav a { color: #435157; font-size: 0.88rem; transition: color 160ms ease; }
 .desktop-nav a:hover { color: var(--color-slate); }
+.language-switch { display: flex; align-items: center; gap: .45rem; flex: 0 0 auto; color: #83908f; font-size: .72rem; letter-spacing: .04em; }
+.language-switch a { min-width: 24px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; color: #647176; transition: color 160ms ease; }
+.language-switch a[aria-current="page"] { color: var(--color-slate); font-weight: 700; }
+.language-switch a:hover { color: var(--color-slate); }
+.language-switch a:focus-visible { outline: 2px solid #236174; outline-offset: 2px; }
 .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.25rem; border: 1px solid transparent; border-radius: 4px; font: inherit; font-size: 0.86rem; font-weight: 590; letter-spacing: -0.012em; transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease; }
 .button--primary { color: #fff; background: var(--color-slate); }
 .button--primary:hover { background: #20434d; }
