@@ -161,6 +161,18 @@ export const siteCopy = {
         },
       ],
     },
+    process: {
+      eyebrow: "How it works",
+      headline: "Cleanliness starts with a conversation.",
+      introduction: "A clear, personal path from your first enquiry to the agreed cleaning work.",
+      cta: "Request a free quote",
+      steps: [
+        { number: "01", title: "Send an enquiry", description: "Tell us what cleaning service you need." },
+        { number: "02", title: "Discuss your needs", description: "Together, we’ll clarify your property’s requirements and the scope of cleaning you need." },
+        { number: "03", title: "Receive a quote", description: "You’ll receive a tailored, no-obligation quote." },
+        { number: "04", title: "Start cleaning", description: "Once everything is agreed, we’ll take care of the cleaning work we’ve discussed." },
+      ],
+    },
   },
   de: {
     metadata: {
@@ -318,6 +330,18 @@ export const siteCopy = {
           quote: "Vielen Dank für die super Reinigung der Scheiben – insbesondere auch Fußboden und Treppengeländer. Top Preis!",
           quoteLanguage: "de",
         },
+      ],
+    },
+    process: {
+      eyebrow: "So funktioniert’s",
+      headline: "Sauberkeit beginnt mit einem Gespräch.",
+      introduction: "In vier klaren Schritten – vom ersten Kontakt bis zu den vereinbarten Reinigungsarbeiten.",
+      cta: "Kostenloses Angebot anfordern",
+      steps: [
+        { number: "01", title: "Anfrage senden", description: "Teilen Sie uns mit, welche Reinigungsleistung Sie benötigen." },
+        { number: "02", title: "Bedarf besprechen", description: "Wir klären gemeinsam die Anforderungen Ihres Objekts und den gewünschten Reinigungsumfang." },
+        { number: "03", title: "Angebot erhalten", description: "Sie erhalten ein individuell abgestimmtes, unverbindliches Angebot." },
+        { number: "04", title: "Reinigung starten", description: "Nach der Abstimmung übernehmen wir die vereinbarten Reinigungsarbeiten." },
       ],
     },
   },
