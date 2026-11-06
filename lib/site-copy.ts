@@ -173,6 +173,39 @@ export const siteCopy = {
         { number: "04", title: "Start cleaning", description: "Once everything is agreed, we’ll take care of the cleaning work we’ve discussed." },
       ],
     },
+    faq: {
+      eyebrow: "Frequently asked questions",
+      headline: "Good to know.",
+      introduction: "Answers about services, coverage and getting started with TopClean. If you need more detail, we’re happy to hear from you.",
+      contactPrompt: "Still have a question? We’ll be happy to advise you personally.",
+      contactLink: "Get in touch",
+      items: [
+        {
+          question: "What cleaning services does TopClean offer?",
+          answer: "Services include building, office, hotel and medical practice cleaning; deep and window cleaning; holiday apartments and private homes; and stairwell and floor care. The scope is tailored to your requirements.",
+        },
+        {
+          question: "Which areas does TopClean serve?",
+          answer: "TopClean serves Lübeck and the surrounding area, including the Baltic coast, Bad Schwartau, Bad Segeberg, Scharbeutz and Timmendorfer Strand. Other locations can be discussed on request.",
+        },
+        {
+          question: "Do you provide regular cleaning for businesses?",
+          answer: "Yes. TopClean provides ongoing property care and regular maintenance cleaning for businesses and facilities. The scope and schedule are agreed individually.",
+        },
+        {
+          question: "Do you clean holiday apartments?",
+          answer: "Yes. Cleaning is coordinated with booking and check-out times. Kitchens, bathrooms and living areas are cleaned, and the accommodation is prepared for incoming guests. Short-notice changeovers are possible where scheduling allows.",
+        },
+        {
+          question: "Is a quote free of charge?",
+          answer: "An initial consultation and quote are generally free of charge. Costs arise only once the agreed services are commissioned.",
+        },
+        {
+          question: "How soon can cleaning begin?",
+          answer: "A start date depends on the property and the work required. Please contact TopClean with your preferred timeframe so you can discuss a suitable start together.",
+        },
+      ],
+    },
   },
   de: {
     metadata: {
@@ -342,6 +375,39 @@ export const siteCopy = {
         { number: "02", title: "Bedarf besprechen", description: "Wir klären gemeinsam die Anforderungen Ihres Objekts und den gewünschten Reinigungsumfang." },
         { number: "03", title: "Angebot erhalten", description: "Sie erhalten ein individuell abgestimmtes, unverbindliches Angebot." },
         { number: "04", title: "Reinigung starten", description: "Nach der Abstimmung übernehmen wir die vereinbarten Reinigungsarbeiten." },
+      ],
+    },
+    faq: {
+      eyebrow: "Häufige Fragen",
+      headline: "Gut zu wissen.",
+      introduction: "Hier finden Sie Antworten zu Leistungen, Einsatzgebiet und dem Start mit TopClean. Wenn Sie mehr wissen möchten, sprechen Sie uns gerne an.",
+      contactPrompt: "Noch Fragen? Wir beraten Sie gerne persönlich.",
+      contactLink: "Kontakt aufnehmen",
+      items: [
+        {
+          question: "Welche Reinigungsleistungen bietet TopClean an?",
+          answer: "Zum Angebot gehören unter anderem Gebäude-, Büro-, Hotel- und Praxisreinigung, Grund- und Fensterreinigung, Ferienwohnungen und Privathaushalte sowie Treppenhaus- und Bodenpflege. Der Umfang wird individuell abgestimmt.",
+        },
+        {
+          question: "In welchen Regionen ist TopClean tätig?",
+          answer: "TopClean betreut Kundinnen und Kunden in Lübeck und der näheren Umgebung, darunter entlang der Ostsee, in Bad Schwartau, Bad Segeberg, Scharbeutz und Timmendorfer Strand. Weitere Orte können Sie gerne anfragen.",
+        },
+        {
+          question: "Bieten Sie regelmäßige Reinigungen für Unternehmen an?",
+          answer: "Ja. TopClean übernimmt laufende Objektpflege und regelmäßige Unterhaltsreinigung für Betriebe und Einrichtungen. Umfang und Rhythmus werden individuell abgestimmt.",
+        },
+        {
+          question: "Übernehmen Sie auch die Reinigung von Ferienwohnungen?",
+          answer: "Ja. Die Reinigung wird mit Buchungs- und Check-out-Zeiten abgestimmt. Küche, Bad und Wohnbereiche werden gereinigt und die Unterkunft für neue Gäste vorbereitet. Kurzfristige Wechsel sind möglich, soweit planbar.",
+        },
+        {
+          question: "Ist die Angebotserstellung kostenlos?",
+          answer: "Ein unverbindliches Erstgespräch und eine Angebotserstellung sind in der Regel kostenfrei. Kosten entstehen erst, wenn vereinbarte Leistungen beauftragt werden.",
+        },
+        {
+          question: "Wie schnell kann eine Reinigung beginnen?",
+          answer: "Ein möglicher Starttermin hängt vom Objekt und den gewünschten Arbeiten ab. Kontaktieren Sie TopClean mit Ihrem Wunschtermin, um gemeinsam einen passenden Beginn abzustimmen.",
+        },
       ],
     },
   },

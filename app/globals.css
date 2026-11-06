@@ -279,6 +279,44 @@ h1 span { color: var(--color-slate); }
   .process-section__cta { margin-top: 2rem; padding-top: 1rem; }
   .process-section__cta .button { min-height: 50px; }
 }
+.faq-section { padding-block: clamp(4.5rem, 8vw, 7.5rem); background: var(--color-background); }
+.faq-section__layout { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); column-gap: clamp(3rem, 9vw, 9.5rem); align-items: start; }
+.faq-section__header { max-width: 540px; }
+.faq-section__eyebrow { display: flex; align-items: center; gap: .7rem; margin: 0 0 1.5rem; color: #647176; font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.faq-section__eyebrow span { width: 26px; height: 1px; background: #71827f; }
+.faq-section__header h2 { margin: 0; color: var(--color-heading); font-size: clamp(3rem, 5.2vw, 5.1rem); font-weight: 590; letter-spacing: -.075em; line-height: 1.01; }
+.faq-section__intro { max-width: 420px; margin: 1.15rem 0 0; color: #536167; font-size: clamp(1rem, 1.12vw, 1.08rem); line-height: 1.72; letter-spacing: -.01em; }
+.faq-section__content { min-width: 0; }
+.faq-item { border-top: 1px solid rgba(20, 45, 53, .23); }
+.faq-item:last-child { border-bottom: 1px solid rgba(20, 45, 53, .23); }
+.faq-item__heading { margin: 0; font-size: inherit; }
+.faq-item__trigger { display: grid; grid-template-columns: minmax(0, 1fr) 20px; align-items: center; gap: 1rem; width: 100%; min-height: 68px; padding: 1rem 0; border: 0; color: var(--color-heading); background: transparent; text-align: left; font: inherit; font-size: clamp(.98rem, 1.28vw, 1.08rem); font-weight: 560; letter-spacing: -.025em; line-height: 1.45; cursor: pointer; }
+.faq-item__trigger:focus-visible { outline: 2px solid #236174; outline-offset: 3px; }
+.faq-item__indicator { position: relative; display: block; width: 18px; height: 18px; color: var(--color-slate); }
+.faq-item__indicator::before,
+.faq-item__indicator::after { position: absolute; top: 50%; left: 50%; display: block; width: 14px; height: 1px; background: currentColor; content: ""; transform: translate(-50%, -50%); transition: transform 220ms ease, opacity 220ms ease; }
+.faq-item__indicator::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq-item__indicator.is-open::after { transform: translate(-50%, -50%) rotate(90deg) scaleX(0); opacity: 0; }
+.faq-item__panel { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows 260ms ease, opacity 220ms ease; }
+.faq-item__panel.is-open { grid-template-rows: 1fr; opacity: 1; }
+.faq-item__panel-inner { min-height: 0; overflow: hidden; }
+.faq-item__panel-inner p { max-width: 680px; margin: 0; padding: 0 2rem 1.25rem 0; color: #5b696e; font-size: .92rem; line-height: 1.7; }
+.faq-section__contact { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1.25rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(20, 45, 53, .2); }
+.faq-section__contact p { margin: 0; color: #536167; font-size: .88rem; line-height: 1.5; }
+.faq-section__contact a { display: inline-flex; align-items: center; min-height: 44px; border-bottom: 1px solid rgba(20, 45, 53, .4); color: var(--color-slate); font-size: .88rem; font-weight: 600; }
+.faq-section__contact a:hover { border-color: var(--color-slate); }
+.faq-section__contact a:focus-visible { outline: 2px solid #236174; outline-offset: 4px; }
+@media (max-width: 760px) {
+  .faq-section { padding-block: 4rem; }
+  .faq-section__layout { grid-template-columns: minmax(0, 1fr); row-gap: 2.3rem; }
+  .faq-section__header { max-width: 600px; }
+  .faq-section__eyebrow { margin-bottom: .1rem; }
+  .faq-section__header h2 { font-size: clamp(2.7rem, 10vw, 3.9rem); }
+  .faq-section__intro { margin-top: .85rem; font-size: .97rem; line-height: 1.65; }
+  .faq-item__trigger { grid-template-columns: minmax(0, 1fr) 18px; gap: .8rem; min-height: 64px; padding-block: .9rem; font-size: .97rem; line-height: 1.45; }
+  .faq-item__panel-inner p { padding: 0 1rem 1rem 0; font-size: .9rem; line-height: 1.65; }
+  .faq-section__contact { align-items: flex-start; flex-direction: column; gap: .45rem; margin-top: 1.5rem; padding-top: .85rem; }
+}
 @media (max-width: 760px) {
   .testimonials { padding-block: 4rem; }
   .testimonials__header { grid-template-columns: minmax(0, 1fr); row-gap: 1.15rem; }
