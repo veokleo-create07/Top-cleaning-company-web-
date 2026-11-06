@@ -244,9 +244,6 @@ h1 span { color: var(--color-slate); }
   .hero__copy { max-width: 650px; }
   .hero__visual { aspect-ratio: 1.55; }
 }
-@media (max-width: 860px), (pointer: coarse), (prefers-reduced-motion: reduce) {
-  .hero-panel-transition__section { transform: none !important; }
-}
 @media (max-width: 760px) {
   .process-section { padding-block: 4rem; }
   .process-section__header { grid-template-columns: minmax(0, 1fr); row-gap: 1.15rem; }
