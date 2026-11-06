@@ -11,7 +11,6 @@ export function WorkPortfolioSection({ locale }: { locale: Locale }) {
           <h2 id="work-heading">{copy.headline}</h2>
           <div className="work-section__intro">
             <p>{copy.introduction}</p>
-            <p className="work-section__demo-note">{copy.demoNote}</p>
           </div>
         </header>
 
@@ -20,8 +19,10 @@ export function WorkPortfolioSection({ locale }: { locale: Locale }) {
             <article className="work-project" key={`${project.service}-${project.location}`}>
               <figure className="work-project__figure">
                 <BeforeAfterSlider
-                  image={project.image}
-                  imageAlt={project.alt}
+                  beforeImage={project.beforeImage}
+                  afterImage={project.afterImage}
+                  beforeAlt={project.beforeAlt}
+                  afterAlt={project.afterAlt}
                   imagePosition={project.position}
                   beforeLabel={copy.before}
                   afterLabel={copy.after}

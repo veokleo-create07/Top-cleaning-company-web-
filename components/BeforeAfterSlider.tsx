@@ -4,8 +4,10 @@ import Image from "next/image";
 import { useState, type CSSProperties } from "react";
 
 type BeforeAfterSliderProps = {
-  image: string;
-  imageAlt: string;
+  beforeImage: string;
+  afterImage: string;
+  beforeAlt: string;
+  afterAlt: string;
   imagePosition: string;
   beforeLabel: string;
   afterLabel: string;
@@ -14,8 +16,10 @@ type BeforeAfterSliderProps = {
 };
 
 export function BeforeAfterSlider({
-  image,
-  imageAlt,
+  beforeImage,
+  afterImage,
+  beforeAlt,
+  afterAlt,
   imagePosition,
   beforeLabel,
   afterLabel,
@@ -30,8 +34,8 @@ export function BeforeAfterSlider({
   return (
     <div className="work-comparison" style={comparisonStyle}>
       <Image
-        src={image}
-        alt={imageAlt}
+        src={afterImage}
+        alt={afterAlt}
         fill
         sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 46vw"
         className="work-comparison__after"
@@ -39,7 +43,7 @@ export function BeforeAfterSlider({
       />
       <div className="work-comparison__before-clip" aria-hidden="true">
         <Image
-          src={image}
+          src={beforeImage}
           alt=""
           fill
           sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 46vw"
@@ -51,7 +55,7 @@ export function BeforeAfterSlider({
       <span className="work-comparison__label work-comparison__label--before">{beforeLabel}</span>
       <span className="work-comparison__label work-comparison__label--after">{afterLabel}</span>
       <input
-        aria-label={`${sliderLabel} ${service}`}
+        aria-label={`${sliderLabel} ${service}. ${beforeLabel}: ${beforeAlt}. ${afterLabel}: ${afterAlt}.`}
         className="work-comparison__range"
         type="range"
         min="0"
