@@ -90,6 +90,47 @@ export const siteCopy = {
       quoteCta: "Request a free quote",
       contactPlaceholder: "The enquiry form will be added here in the next stage of the demo.",
     },
+    work: {
+      eyebrow: "Our work",
+      headline: "Results that speak for themselves.",
+      introduction:
+        "Explore the before-and-after sliders with illustrative demo imagery. Authentic project photos will replace these examples when supplied.",
+      demoNote:
+        "Demo imagery only · these sliders are visual prototypes, not records of real TopClean work or results.",
+      before: "Before",
+      after: "After",
+      sliderLabel: "Before and after comparison for",
+      items: [
+        {
+          service: "Stairwell cleaning",
+          location: "Lübeck",
+          image: "/images/service-building-demo.jpg",
+          alt: "Illustrative cleaner working in an apartment building stairwell",
+          position: "58% 50%",
+        },
+        {
+          service: "Holiday apartment cleaning",
+          location: "Timmendorfer Strand",
+          image: "/images/service-holiday-demo.jpg",
+          alt: "Illustrative cleaner preparing a holiday apartment bedroom",
+          position: "64% 50%",
+        },
+        {
+          service: "Balcony cleaning",
+          location: "Stockelsdorf",
+          image: "/images/company-introduction-demo.jpg",
+          alt: "Illustrative cleaner wiping a glass surface in a bright interior",
+          position: "57% 50%",
+        },
+        {
+          service: "Garden & stair cleaning",
+          location: "Scharbeutz",
+          image: "/images/service-building-demo.jpg",
+          alt: "Illustrative cleaner maintaining a shared building entrance",
+          position: "43% 50%",
+        },
+      ],
+    },
   },
   de: {
     metadata: {
@@ -179,6 +220,47 @@ export const siteCopy = {
       quoteDescription: "Erzählen Sie uns von Ihrem Objekt – wir erstellen ein individuelles und unverbindliches Angebot.",
       quoteCta: "Kostenloses Angebot anfordern",
       contactPlaceholder: "Das Anfrageformular wird in der nächsten Ausbaustufe ergänzt.",
+    },
+    work: {
+      eyebrow: "Unsere Arbeit",
+      headline: "Ergebnisse, die für sich sprechen.",
+      introduction:
+        "Entdecken Sie die Vorher-Nachher-Slider anhand illustrativer Demoaufnahmen. Sobald authentische Projektfotos vorliegen, ersetzen sie diese Beispiele.",
+      demoNote:
+        "Nur Demoaufnahmen · die Slider sind visuelle Muster, keine Belege für echte TopClean-Aufträge oder Reinigungsergebnisse.",
+      before: "Vorher",
+      after: "Nachher",
+      sliderLabel: "Vorher-Nachher-Vergleich für",
+      items: [
+        {
+          service: "Treppenhausreinigung",
+          location: "Lübeck",
+          image: "/images/service-building-demo.jpg",
+          alt: "Illustrative Aufnahme einer Reinigungskraft in einem Wohnhaustreppenhaus",
+          position: "58% 50%",
+        },
+        {
+          service: "Ferienwohnungsreinigung",
+          location: "Timmendorfer Strand",
+          image: "/images/service-holiday-demo.jpg",
+          alt: "Illustrative Aufnahme einer Reinigungskraft bei der Vorbereitung einer Ferienwohnung",
+          position: "64% 50%",
+        },
+        {
+          service: "Balkonreinigung",
+          location: "Stockelsdorf",
+          image: "/images/company-introduction-demo.jpg",
+          alt: "Illustrative Aufnahme einer Reinigungskraft beim Wischen einer Glasfläche in einem hellen Innenraum",
+          position: "57% 50%",
+        },
+        {
+          service: "Garten- & Treppenreinigung",
+          location: "Scharbeutz",
+          image: "/images/service-building-demo.jpg",
+          alt: "Illustrative Aufnahme einer Reinigungskraft bei der Pflege eines gemeinsamen Gebäudeeingangs",
+          position: "43% 50%",
+        },
+      ],
     },
   },
 } satisfies Record<Locale, unknown>;
