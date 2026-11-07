@@ -28,9 +28,8 @@ a:focus-visible, summary:focus-visible { outline: 2px solid #236174; outline-off
 
 .site-header { height: 90px; }
 .site-header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.wordmark { display: inline-flex; flex-direction: column; gap: 1px; min-width: 190px; }
-.wordmark__name { color: var(--color-slate); font-size: 1.42rem; font-weight: 750; letter-spacing: -0.065em; line-height: 1; }
-.wordmark__descriptor { color: #58666b; font-size: 0.63rem; font-weight: 520; letter-spacing: 0.105em; text-transform: uppercase; }
+.wordmark { display: inline-flex; flex: 0 0 auto; align-items: center; width: clamp(118px, 11vw, 148px); }
+.wordmark__logo { display: block; width: 100%; height: auto; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(1.6rem, 3vw, 3.25rem); margin-left: auto; margin-right: clamp(1.25rem, 3vw, 3rem); }
 .desktop-nav a { color: #435157; font-size: 0.88rem; transition: color 160ms ease; }
 .desktop-nav a:hover { color: var(--color-slate); }
@@ -189,7 +188,7 @@ h1 span { color: var(--color-slate); }
 @media (max-width: 1024px) {
   :root { --page-gutter: clamp(1.5rem, 4.4vw, 3rem); }
   .site-header { height: 78px; }
-  .wordmark { min-width: auto; }
+  .wordmark { width: 125px; }
   .hero { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(2rem, 4vw, 3.5rem); padding-top: 4rem; }
   h1 { font-size: clamp(3.1rem, 6.1vw, 4.4rem); }
   .hero__actions { align-items: flex-start; flex-direction: column; }
@@ -367,8 +366,8 @@ h1 span { color: var(--color-slate); }
 }
 .site-footer { padding-block: clamp(3.5rem, 6vw, 5.75rem) 1.25rem; background: var(--color-background); color: var(--color-slate); }
 .site-footer__main { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(8rem, .62fr) minmax(14rem, .8fr); gap: clamp(2.5rem, 6vw, 6.5rem); padding-bottom: clamp(2.5rem, 4vw, 4rem); }
-.site-footer__brand-name { display: inline-block; color: var(--color-slate); font-size: clamp(2.25rem, 3.2vw, 3.1rem); font-weight: 740; letter-spacing: -.075em; line-height: 1; }
-.site-footer__descriptor { margin: .35rem 0 0; color: #536167; font-size: .65rem; font-weight: 570; letter-spacing: .12em; text-transform: uppercase; }
+.site-footer__brand-logo { display: inline-flex; width: clamp(190px, 18vw, 245px); align-items: center; }
+.site-footer__logo-image { display: block; width: 100%; height: auto; }
 .site-footer__description { max-width: 440px; margin: 1.25rem 0 0; color: #58676c; font-size: .9rem; line-height: 1.68; }
 .site-footer__nav h2,
 .site-footer__contact h2 { margin: .25rem 0 1.1rem; color: var(--color-slate); font-size: .72rem; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; }
@@ -379,7 +378,7 @@ h1 span { color: var(--color-slate); }
 .site-footer__contact a:hover { color: var(--color-slate); text-decoration-color: rgba(20, 45, 53, .42); }
 .site-footer__nav a:focus-visible,
 .site-footer__contact a:focus-visible,
-.site-footer__brand-name:focus-visible,
+.site-footer__brand-logo:focus-visible,
 .site-footer__legal a:focus-visible { outline: 2px solid #236174; outline-offset: 3px; }
 .site-footer__contact { display: flex; flex-direction: column; align-items: flex-start; font-style: normal; }
 .site-footer__contact p { margin: 0 0 .6rem; color: #536167; font-size: .88rem; line-height: 1.65; }
@@ -388,7 +387,6 @@ h1 span { color: var(--color-slate); }
 .site-footer__legal { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.35rem; }
 .site-footer__legal a { display: inline-flex; align-items: center; min-height: 40px; color: #536167; font-size: .75rem; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: color 160ms ease, text-decoration-color 160ms ease; }
 .site-footer__legal a:hover { color: var(--color-slate); text-decoration-color: rgba(20, 45, 53, .42); }
-.site-footer__wordmark { overflow: hidden; margin: clamp(2rem, 4vw, 3.75rem) 0 0; color: rgba(20, 45, 53, .09); font-size: clamp(4rem, 10vw, 9.25rem); font-weight: 750; letter-spacing: -.095em; line-height: .84; white-space: nowrap; }
 @media (max-width: 860px) {
   .site-footer__main { grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 2.5rem 3rem; }
   .site-footer__brand { grid-column: 1 / -1; }
@@ -397,7 +395,7 @@ h1 span { color: var(--color-slate); }
   .site-footer { padding-block: 3rem 1rem; }
   .site-footer__main { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; padding-bottom: 2rem; }
   .site-footer__brand { grid-column: auto; }
-  .site-footer__brand-name { font-size: 2.45rem; }
+  .site-footer__brand-logo { width: 205px; }
   .site-footer__description { max-width: 34rem; margin-top: .85rem; font-size: .87rem; }
   .site-footer__nav,
   .site-footer__contact { padding-top: 1.2rem; border-top: 1px solid rgba(20, 45, 53, .16); }
@@ -410,7 +408,6 @@ h1 span { color: var(--color-slate); }
   .site-footer__bottom { align-items: flex-start; flex-direction: column; gap: .45rem; padding-top: .8rem; }
   .site-footer__legal { gap: .25rem 1.1rem; }
   .site-footer__legal a { min-height: 40px; }
-  .site-footer__wordmark { margin-top: 1.75rem; font-size: clamp(3.6rem, 16vw, 5rem); }
 }
 @media (max-width: 760px) {
   .faq-section { padding-block: 4rem; }
@@ -444,8 +441,6 @@ h1 span { color: var(--color-slate); }
   :root { --page-gutter: 1.25rem; }
   .site-header { height: 72px; }
   .site-header__inner { gap: 1rem; }
-  .wordmark__name { font-size: 1.3rem; }
-  .wordmark__descriptor { font-size: 0.57rem; }
   .desktop-nav, .header-cta { display: none; }
   .mobile-nav { position: relative; display: block; margin-left: auto; }
   .mobile-nav summary { display: flex; align-items: center; gap: 0.65rem; min-height: 44px; padding: 0.3rem 0; color: var(--color-slate); cursor: pointer; list-style: none; font-size: 0.85rem; font-weight: 550; }

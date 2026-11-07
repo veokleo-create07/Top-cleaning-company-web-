@@ -1,4 +1,5 @@
 import { siteCopy, type Locale } from "@/lib/site-copy";
+import Image from "next/image";
 
 export function SiteFooter({ locale }: { locale: Locale }) {
   const copy = siteCopy[locale].footer;
@@ -8,8 +9,9 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       <div className="page-shell">
         <div className="site-footer__main">
           <div className="site-footer__brand">
-            <a className="site-footer__brand-name" href="#start">TopClean</a>
-            <p className="site-footer__descriptor">{copy.descriptor}</p>
+            <a className="site-footer__brand-logo" href="#start" aria-label={locale === "en" ? "TopClean Building Services – Home" : "TopClean Gebäudeservice – Startseite"}>
+              <Image src="/images/topclean-logo.png" alt="" width={920} height={593} className="site-footer__logo-image" />
+            </a>
             <p className="site-footer__description">{copy.description}</p>
           </div>
 
@@ -37,8 +39,6 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <a href="https://www.topcleannord.de/datenschutz">{copy.privacy}</a>
           </nav>
         </div>
-
-        <p className="site-footer__wordmark" aria-hidden="true">TopClean</p>
       </div>
     </footer>
   );
