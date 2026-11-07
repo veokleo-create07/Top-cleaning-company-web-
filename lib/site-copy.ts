@@ -18,15 +18,13 @@ export const siteCopy = {
       mobileLabel: "Mobile navigation",
     },
     hero: {
-      eyebrow: "Commercial cleaning in Lübeck & the surrounding area",
       headlineFirst: "Clean spaces.",
       headlineSecond: "Strong impressions.",
       description:
-        "Reliable cleaning for offices, medical practices and managed properties in Lübeck and the surrounding area.",
+        "Professional building cleaning for businesses, medical practices and managed properties in Lübeck and the surrounding area.",
       quote: "Request a free quote",
       services: "Explore our services",
       imageAlt: "Illustrative photo of a cleaning professional wiping glass in a sunlit modern office",
-      imageCaption: "Illustrative cleaning photo",
     },
     company: {
       headlineFirst: "Clean spaces start",
@@ -271,15 +269,13 @@ export const siteCopy = {
       mobileLabel: "Mobile Navigation",
     },
     hero: {
-      eyebrow: "Gebäudereinigung in Lübeck & Umgebung",
       headlineFirst: "Saubere Räume.",
-      headlineSecond: "Starker Eindruck.",
+      headlineSecond: "Starker Auftritt.",
       description:
-        "Zuverlässige Reinigung für Büros, Praxen und Immobilien in Lübeck und Umgebung.",
+        "Professionelle Gebäudereinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung.",
       quote: "Kostenloses Angebot anfordern",
-      services: "Leistungen entdecken",
+      services: "Leistungen ansehen",
       imageAlt: "Illustrative Aufnahme einer Reinigungskraft, die in einem sonnigen, modernen Büro Glasflächen reinigt",
-      imageCaption: "Illustrative Reinigungsaufnahme",
     },
     company: {
       headlineFirst: "Sauberkeit beginnt",

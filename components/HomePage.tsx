@@ -40,30 +40,32 @@ export function HomePage({ locale }: HomePageProps) {
       <SiteHeader locale={locale} />
       <HeroPanelScrollTransition
         hero={
-          <>
-            <section className="hero" aria-labelledby="hero-heading">
+          <section className="hero" aria-labelledby="hero-heading">
+            <figure className="hero__visual">
+              <Image
+                src="/images/hero-office-glass-cleaning.jpg"
+                alt={copy.hero.imageAlt}
+                fill
+                priority
+                sizes="(max-width: 760px) calc(100vw - 24px), calc(100vw - 24px)"
+                className="hero__image"
+              />
+            </figure>
+            <p className="hero__display" aria-hidden="true">TOP CLEAN</p>
+            <div className="hero__shade" aria-hidden="true" />
+            <div className="hero__content">
               <div className="hero__copy">
-                <p className="hero__eyebrow">{copy.hero.eyebrow}</p>
-                <h1 id="hero-heading">{copy.hero.headlineFirst}<br /><span>{copy.hero.headlineSecond}</span></h1>
+                <h1 id="hero-heading">{copy.hero.headlineFirst} <span>{copy.hero.headlineSecond}</span></h1>
+              </div>
+              <div className="hero__details">
                 <p className="hero__description">{copy.hero.description}</p>
                 <div className="hero__actions">
                   <Button href="#kontakt">{copy.hero.quote}</Button>
                   <Button href="#leistungen" variant="secondary" className="hero__secondary">{copy.hero.services}</Button>
                 </div>
               </div>
-
-              <figure className="hero__visual">
-                <Image
-                  src="/images/hero-office-glass-cleaning.jpg"
-                  alt={copy.hero.imageAlt}
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 55vw"
-                  className="hero__image"
-                />
-              </figure>
-            </section>
-          </>
+            </div>
+          </section>
         }
         introduction={<CompanyIntroduction locale={locale} />}
       />
