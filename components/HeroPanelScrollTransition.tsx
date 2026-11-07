@@ -30,6 +30,15 @@ export function HeroPanelScrollTransition({ hero, introduction }: HeroPanelScrol
     const media = gsap.matchMedia();
     const addTransition = (compact: boolean) => {
       const panelOffset = () => Math.min(window.innerHeight * (compact ? 0.12 : 0.18), compact ? 96 : 180);
+      const panelInset = compact ? 16 : 24;
+      const panelRadius = compact ? 12 : 16;
+      const applyPanelExpansion = (progress: number) => {
+        const inset = panelInset * (1 - progress);
+        panel.style.width = `calc(100% - ${inset * 2}px)`;
+        panel.style.marginLeft = `${inset}px`;
+        panel.style.marginRight = `${inset}px`;
+        panel.style.borderRadius = `${panelRadius * (1 - progress)}px`;
+      };
       let orientationTimer: number | undefined;
       const syncCompactPanelHeight = () => {
         if (!compact) return;
@@ -49,31 +58,37 @@ export function HeroPanelScrollTransition({ hero, introduction }: HeroPanelScrol
 
       syncCompactPanelHeight();
       root.classList.add("hero-panel-transition--active");
-      gsap.fromTo(
+      const transition = gsap.timeline();
+
+      transition.fromTo(
         introductionElement,
         { y: panelOffset },
-        {
-          y: 0,
-          immediateRender: false,
-          ease: "none",
-          scrollTrigger: {
-            trigger: heroElement,
-            start: "top top",
-            end: () => `+=${panelTravel()}`,
-            pin: heroElement,
-            pinSpacing: false,
-            scrub: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        },
+        { y: 0, immediateRender: false, ease: "none" },
+        0,
       );
+      ScrollTrigger.create({
+        trigger: heroElement,
+        start: "top top",
+        end: () => `+=${panelTravel()}`,
+        pin: heroElement,
+        pinSpacing: false,
+        scrub: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+        animation: transition,
+        onUpdate: (self) => applyPanelExpansion(self.progress),
+        onRefresh: (self) => applyPanelExpansion(self.progress),
+      });
 
       if (compact) window.addEventListener("orientationchange", handleOrientationChange);
       return () => {
         if (compact) window.removeEventListener("orientationchange", handleOrientationChange);
         window.clearTimeout(orientationTimer);
         panel.style.removeProperty("min-height");
+        panel.style.removeProperty("width");
+        panel.style.removeProperty("margin-left");
+        panel.style.removeProperty("margin-right");
+        panel.style.removeProperty("border-radius");
         root.classList.remove("hero-panel-transition--active");
       };
     };
