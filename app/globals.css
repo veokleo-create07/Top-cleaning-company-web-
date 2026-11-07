@@ -508,3 +508,50 @@ h1 span { color: var(--color-slate); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+/* Homepage simplification: fewer blocks, clearer visual rhythm. */
+.company-intro { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
+.services { padding-block: clamp(3rem, 5vw, 4.5rem); }
+.services__header { display: block; max-width: 900px; }
+.services__heading { font-size: clamp(2.35rem, 4.5vw, 4.1rem); }
+.services__intro { max-width: 790px; margin: 1rem 0 0; padding: 0; color: #536167; font-size: clamp(1rem, 1.15vw, 1.1rem); line-height: 1.7; }
+.services__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 2.2vw, 2rem); margin-top: clamp(2rem, 3.5vw, 3rem); }
+.service-item__figure { aspect-ratio: 1.22; }
+.service-item__heading { padding-top: .85rem; font-size: clamp(1rem, 1.45vw, 1.35rem); }
+.services__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+.testimonials { padding-block: clamp(3rem, 5vw, 4.75rem); }
+.testimonials__header { display: block; text-align: center; }
+.testimonials__header h2 { max-width: none; font-size: clamp(2.35rem, 4.4vw, 4rem); }
+.testimonials__layout { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 2.4vw, 2.5rem); margin-top: 2.5rem; }
+.testimonial { display: flex; flex-direction: column; min-height: 13rem; padding: 1.35rem 0; border-top: 1px solid rgba(20,45,53,.24); }
+.testimonial__quote { margin: 0; }
+.testimonial__quote p,
+.testimonial:not(.testimonial--featured) .testimonial__quote p { font-size: clamp(1rem, 1.22vw, 1.2rem); line-height: 1.58; letter-spacing: -.025em; }
+.testimonial__attribution { margin-top: auto; padding-top: 1.2rem; }
+.testimonials__cta { justify-content: center; margin-top: 1.5rem; }
+.faq-section { padding-block: clamp(3.25rem, 5vw, 4.75rem); }
+.faq-section__layout { display: block; max-width: 930px; }
+.faq-section__header { max-width: none; margin: 0 auto 2rem; text-align: center; }
+.faq-section__header h2 { font-size: clamp(2.5rem, 4.5vw, 4rem); }
+.faq-section__content { max-width: 850px; margin-inline: auto; }
+.faq-section__contact { justify-content: center; }
+.contact-panel__layout { grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr); gap: clamp(2rem, 4vw, 4rem); }
+.contact-panel__copy h2 { font-size: clamp(2.8rem, 4vw, 4rem); }
+@media (max-width: 760px) {
+  .services { padding-block: 3rem; }
+  .services__heading { font-size: clamp(2.25rem, 9vw, 3.2rem); }
+  .services__intro { margin-top: .8rem; font-size: .94rem; }
+  .services__grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; margin-top: 1.7rem; }
+  .service-item__figure { aspect-ratio: 1.48; }
+  .service-item__heading { padding-top: .6rem; font-size: 1.12rem; }
+  .services__actions { display: grid; grid-template-columns: minmax(0, 1fr); margin-top: 1.5rem; }
+  .services__actions .button { width: 100%; min-height: 50px; }
+  .testimonials { padding-block: 3rem; }
+  .testimonials__layout { grid-template-columns: minmax(0, 1fr); gap: 0; margin-top: 1.5rem; }
+  .testimonial { min-height: 0; padding-block: 1rem; }
+  .testimonials__cta { align-items: center; }
+  .faq-section__header { margin-bottom: 1.5rem; }
+  .faq-section__contact { align-items: center; text-align: center; }
+  .contact-panel__layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .contact-panel__copy h2 { font-size: clamp(2.35rem, 8.3vw, 3.2rem); }
+}

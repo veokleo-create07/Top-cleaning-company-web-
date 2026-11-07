@@ -13,7 +13,6 @@ export function FAQSection({ locale }: { locale: Locale }) {
       <div className="page-shell faq-section__layout">
         <header className="faq-section__header">
           <h2 id="faq-heading">{copy.headline}</h2>
-          <p className="faq-section__intro">{copy.introduction}</p>
         </header>
 
         <div className="faq-section__content">

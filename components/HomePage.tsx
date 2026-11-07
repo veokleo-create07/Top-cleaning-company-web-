@@ -4,9 +4,7 @@ import { CompanyIntroduction } from "@/components/CompanyIntroduction";
 import { HeroPanelScrollTransition } from "@/components/HeroPanelScrollTransition";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ServicesSection } from "@/components/ServicesSection";
-import { WorkPortfolioSection } from "@/components/WorkPortfolioSection";
 import { CustomerTestimonials } from "@/components/CustomerTestimonials";
-import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ContactQuoteSection } from "@/components/ContactQuoteSection";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -70,9 +68,7 @@ export function HomePage({ locale }: HomePageProps) {
         introduction={<CompanyIntroduction locale={locale} />}
       />
       <ServicesSection locale={locale} />
-      <WorkPortfolioSection locale={locale} />
       <CustomerTestimonials locale={locale} />
-      <HowItWorksSection locale={locale} />
       <FAQSection locale={locale} />
       <ContactQuoteSection locale={locale} />
       <SiteFooter locale={locale} />

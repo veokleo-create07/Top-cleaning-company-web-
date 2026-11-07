@@ -58,30 +58,9 @@ export function ContactQuoteSection({ locale }: { locale: Locale }) {
           <div className="contact-panel__layout">
             <div className="contact-panel__copy">
               <h2 id="contact-heading">{copy.headline}</h2>
-              <p className="contact-panel__intro">{copy.introduction}</p>
-
-              <address className="contact-details">
-                <div>
-                  <span>{copy.phoneLabel}</span>
-                  <a href="tel:+4917623483923">+49 176 23483923</a>
-                </div>
-                <div>
-                  <span>{copy.emailLabel}</span>
-                  <a href="mailto:info@topcleannord.de">info@topcleannord.de</a>
-                </div>
-                <div>
-                  <span>{copy.locationLabel}</span>
-                  <p>{copy.location}</p>
-                </div>
-              </address>
-
-              <a className="button button--inverse contact-panel__whatsapp" href="https://wa.me/4917623483923" target="_blank" rel="noreferrer">
-                {copy.whatsapp}
-              </a>
             </div>
 
             <div className="contact-form-wrap">
-              <p className="contact-form__demo" role="note">{copy.demoNotice}</p>
               <form ref={formRef} className="contact-form" noValidate onSubmit={handleSubmit}>
                 {status === "error" && (
                   <p className="contact-form__status contact-form__status--error" role="alert">{copy.errorSummary}</p>

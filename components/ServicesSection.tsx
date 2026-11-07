@@ -10,13 +10,11 @@ export function ServicesSection({ locale }: { locale: Locale }) {
       <div className="page-shell">
         <header className="services__header">
           <h2 className="services__heading" id="services-heading">{copy.headline}</h2>
-          <div className="services__intro">
-            <p>{copy.introduction}</p>
-          </div>
+          <p className="services__intro">{copy.introduction}</p>
         </header>
 
         <div className="services__grid">
-          {copy.items.map((service, index) => (
+          {copy.items.slice(0, 3).map((service, index) => (
             <article className="service-item" key={service.title}>
               <figure className={`service-item__figure service-item__figure--${index + 1}`}>
                 <Image
@@ -27,38 +25,14 @@ export function ServicesSection({ locale }: { locale: Locale }) {
                   className="service-item__image"
                 />
               </figure>
-              <div className="service-item__body">
-                <h3 className="service-item__heading">{service.title}</h3>
-                <p className="service-item__description">{service.description}</p>
-                <Button
-                  className="service-item__link"
-                  href="#kontakt"
-                  variant="secondary"
-                  aria-label={`${copy.serviceLinkLabel}: ${service.title}`}
-                >
-                  {copy.serviceLinkLabel}
-                </Button>
-              </div>
+              <h3 className="service-item__heading">{service.title}</h3>
             </article>
           ))}
         </div>
 
-        <div className="services__more-link">
-          <Button href="#weitere-leistungen" variant="secondary">{copy.moreLabel}</Button>
-        </div>
-        <div className="services__more" id="weitere-leistungen">
-          <div>
-            <h3>{copy.moreHeading}</h3>
-            <p>{copy.moreDescription}</p>
-          </div>
-        </div>
-
-        <div className="services__quote">
-          <div>
-            <h3>{copy.quoteHeading}</h3>
-            <p>{copy.quoteDescription}</p>
-          </div>
-          <Button href="#kontakt">{copy.quoteCta}</Button>
+        <div className="services__actions">
+          <Button href="#kontakt">{copy.serviceLinkLabel}</Button>
+          <Button href="#fragen" variant="secondary">{copy.moreLabel}</Button>
         </div>
       </div>
     </section>

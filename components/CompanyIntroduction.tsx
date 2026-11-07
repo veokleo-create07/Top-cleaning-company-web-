@@ -1,9 +1,7 @@
 import { CompanyFeaturePanel } from "@/components/CompanyFeaturePanel";
-import { siteCopy, type Locale } from "@/lib/site-copy";
+import type { Locale } from "@/lib/site-copy";
 
 export function CompanyIntroduction({ locale }: { locale: Locale }) {
-  const copy = siteCopy[locale].company;
-
   return (
     <section
       className="company-intro"
@@ -12,14 +10,6 @@ export function CompanyIntroduction({ locale }: { locale: Locale }) {
     >
       <CompanyFeaturePanel locale={locale} />
 
-      <ul className="company-intro__values page-shell" aria-label={copy.valuesLabel}>
-        {copy.values.map((value) => (
-          <li className="company-intro__value" key={value.title}>
-            <h3>{value.title}</h3>
-            <p>{value.description}</p>
-          </li>
-        ))}
-      </ul>
     </section>
   );
 }

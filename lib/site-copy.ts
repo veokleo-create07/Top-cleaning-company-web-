@@ -46,7 +46,7 @@ export const siteCopy = {
     services: {
       headline: "Professional cleaning for every space.",
       introduction:
-        "From everyday workspaces to guest-ready apartments, we tailor the cleaning to your property and the way it is used.",
+        "Professional cleaning for every space, from everyday workspaces to guest-ready apartments, tailored to your property and the way it’s used.",
       items: [
         {
           title: "Office & commercial cleaning",
@@ -73,14 +73,8 @@ export const siteCopy = {
           imageAlt: "A cleaner mopping a sunlit apartment building entrance hall",
         },
       ],
-      serviceLinkLabel: "Request this service",
-      moreLabel: "Explore all cleaning services",
-      moreHeading: "More ways we can help",
-      moreDescription:
-        "We also offer specialist cleaning and outdoor maintenance. Tell us what your property needs and we can discuss a suitable scope.",
-      quoteHeading: "A clean space starts with a good plan.",
-      quoteDescription: "Tell us about your property and we’ll prepare a tailored, no-obligation quote.",
-      quoteCta: "Request a free quote",
+      serviceLinkLabel: "Request a service",
+      moreLabel: "Explore more",
     },
     work: {
       headline: "Results that speak for themselves.",
@@ -130,28 +124,29 @@ export const siteCopy = {
     },
     testimonials: {
       headline: "Trust that lasts.",
-      introduction: "A few words from people who have experienced our cleaning services.",
+      introduction: "",
       pendingQuote: "The original commercial-cleaning review is awaiting source verification.",
       ctaPrompt: "Looking for a dependable cleaning partner?",
       ctaLabel: "Request a free quote",
       items: [
         {
-          name: "Ruschwan F.",
-          service: "Commercial cleaning",
-          quote: null,
-          quoteLanguage: "de",
-        },
-        {
-          name: "Kemal M.",
-          service: "Window cleaning",
-          quote: "A quick appointment, fast and professional window cleaning at a fair price — very friendly and pleasant. Highly recommended!",
+          name: "Yassine A.",
+          service: "Office cleaning",
+          quote: "Excellent service! Punctual, professional and very thorough — the rooms were spotless and the customer service was super friendly. Absolutely recommend; we’ll book again!",
           quoteLanguage: "en",
           translationNote: "Translated from German",
         },
         {
-          name: "Lenny H.",
-          service: "Cleaning services",
-          quote: "Thank you for the excellent cleaning of the windows — especially the floor and stair railings, too. Great price!",
+          name: "Herr C.",
+          service: "Building cleaning",
+          quote: "Excellent service and thorough cleaning. Professional, reliable and attentive to individual requests — our spaces are immaculate after every clean. A clear recommendation for anyone who values quality.",
+          quoteLanguage: "en",
+          translationNote: "Translated from German",
+        },
+        {
+          name: "Caglayan A.",
+          service: "Window cleaning",
+          quote: "Windows, frames and seals cleaned at our terraced home — punctual and committed. Mirrors and bathroom splash screens were also cleaned at no extra charge. Excellent value and highly recommended.",
           quoteLanguage: "en",
           translationNote: "Translated from German",
         },
@@ -201,15 +196,15 @@ export const siteCopy = {
       ],
     },
     contactForm: {
-      headline: "Let’s talk about your property.",
+      headline: "Let’s talk.",
       introduction: "TopClean tailors its cleaning services to your property, its needs and the work you have in mind.",
       phoneLabel: "Phone",
       emailLabel: "Email",
       locationLabel: "Location",
       location: "Lübeck & surrounding area",
       whatsapp: "Contact us on WhatsApp",
-      demoNotice: "Demo form. Your details are not sent or stored. To make a real enquiry, please call or email TopClean.",
-      demoResult: "Demo mode: your details were not sent or saved. To make a real enquiry, please call or email us directly.",
+      demoNotice: "",
+      demoResult: "This demo form does not send enquiries. Please contact TopClean using the details in the footer.",
       errorSummary: "Please check the highlighted fields before continuing.",
       errors: {
         name: "Please enter your name.",
@@ -304,7 +299,7 @@ export const siteCopy = {
     services: {
       headline: "Professionelle Reinigung für jeden Anspruch.",
       introduction:
-        "Von Arbeitsräumen bis zu ferienfertigen Wohnungen: Wir stimmen die Reinigung auf Ihre Räume und Abläufe ab.",
+        "Professionelle Reinigung für jeden Raum – vom täglichen Arbeitsplatz bis zur ferienfertigen Wohnung, abgestimmt auf Ihr Objekt und seine Nutzung.",
       items: [
         {
           title: "Büro- & Gewerbereinigung",
@@ -332,13 +327,7 @@ export const siteCopy = {
         },
       ],
       serviceLinkLabel: "Leistung anfragen",
-      moreLabel: "Alle Reinigungsleistungen entdecken",
-      moreHeading: "Weitere Leistungen",
-      moreDescription:
-        "Zusätzlich übernehmen wir Sonderreinigungen und Außenpflege. Gemeinsam besprechen wir, welche Aufgaben zu Ihrer Immobilie passen.",
-      quoteHeading: "Gute Reinigung beginnt mit einem klaren Plan.",
-      quoteDescription: "Erzählen Sie uns von Ihrem Objekt – wir erstellen ein individuelles und unverbindliches Angebot.",
-      quoteCta: "Kostenloses Angebot anfordern",
+      moreLabel: "Mehr entdecken",
     },
     work: {
       headline: "Ergebnisse, die für sich sprechen.",
@@ -388,27 +377,27 @@ export const siteCopy = {
     },
     testimonials: {
       headline: "Vertrauen, das bleibt.",
-      introduction: "Einblicke in die Erfahrungen unserer Kundinnen und Kunden.",
+      introduction: "",
       pendingQuote: "Der Originalwortlaut der gewerblichen Bewertung steht noch zur Quellenprüfung aus.",
       ctaPrompt: "Sie suchen einen zuverlässigen Reinigungspartner?",
       ctaLabel: "Kostenloses Angebot anfordern",
       items: [
         {
-          name: "Ruschwan F.",
-          service: "Gewerbereinigung",
-          quote: null,
+          name: "Yassine A.",
+          service: "Büroreinigung",
+          quote: "Hervorragender Service! Pünktlich, professionell und sehr gründlich – die Räume waren blitzsauber und der Kundenservice super freundlich. Absolut empfehlenswert – wir buchen wieder!",
           quoteLanguage: "de",
         },
         {
-          name: "Kemal M.",
+          name: "Herr C.",
+          service: "Gebäudereinigung",
+          quote: "Hervorragender Service und gründliche Reinigung. Professionell, zuverlässig und auf individuelle Wünsche eingegangen – unsere Räumlichkeiten sind nach jeder Reinigung makellos. Klare Empfehlung für alle, die Wert auf Qualität legen.",
+          quoteLanguage: "de",
+        },
+        {
+          name: "Caglayan A.",
           service: "Fensterreinigung",
-          quote: "Super schnell ein Termin, schnelle und professionelle Fensterreinigung zu fairen Preisen – sehr sympathisch und angenehm. Auf jeden Fall weiterzuempfehlen!",
-          quoteLanguage: "de",
-        },
-        {
-          name: "Lenny H.",
-          service: "Reinigungsservices",
-          quote: "Vielen Dank für die super Reinigung der Scheiben – insbesondere auch Fußboden und Treppengeländer. Top Preis!",
+          quote: "Fenster inklusive Rahmen und Dichtungen im Reihenmittelhaus – pünktlich und engagiert. Zusätzlich wurden Spiegel und Spritzschutzscheiben im Bad kostenfrei gereinigt. Preis-Leistung absolut top – uneingeschränkt weiterzuempfehlen.",
           quoteLanguage: "de",
         },
       ],
@@ -457,15 +446,15 @@ export const siteCopy = {
       ],
     },
     contactForm: {
-      headline: "Lassen Sie uns über Ihr Objekt sprechen.",
+      headline: "Lassen Sie uns sprechen.",
       introduction: "TopClean stimmt die Reinigungsleistungen individuell auf Ihr Objekt, den Bedarf und den gewünschten Umfang ab.",
       phoneLabel: "Telefon",
       emailLabel: "E-Mail",
       locationLabel: "Standort",
       location: "Lübeck & Umgebung",
       whatsapp: "Kontakt per WhatsApp",
-      demoNotice: "Demo-Formular. Ihre Angaben werden nicht übertragen oder gespeichert. Für eine echte Anfrage nutzen Sie bitte Telefon oder E-Mail.",
-      demoResult: "Demo-Modus: Ihre Angaben wurden weder versendet noch gespeichert. Für eine echte Anfrage rufen Sie uns bitte an oder schreiben Sie uns direkt.",
+      demoNotice: "",
+      demoResult: "Dieses Demo-Formular versendet keine Anfragen. Nutzen Sie bitte die Kontaktdaten im Fußbereich.",
       errorSummary: "Bitte prüfen Sie die markierten Felder.",
       errors: {
         name: "Bitte geben Sie Ihren Namen ein.",
