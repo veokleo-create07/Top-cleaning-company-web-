@@ -54,14 +54,16 @@ export function HomePage({ locale }: HomePageProps) {
             <p className="hero__display" aria-hidden="true">TOPCLEAN</p>
             <div className="hero__shade" aria-hidden="true" />
             <div className="hero__content">
-              <div className="hero__copy">
-                <h1 id="hero-heading"><span>{copy.hero.headlineFirst}</span><span>{copy.hero.headlineSecond}</span></h1>
-              </div>
-              <div className="hero__details">
-                <p className="hero__description">{copy.hero.description}</p>
-                <div className="hero__actions">
-                  <Button href="#kontakt">{copy.hero.quote}</Button>
-                  <Button href="#leistungen" variant="secondary" className="hero__secondary">{copy.hero.services}</Button>
+              <div className="hero__content-inner">
+                <div className="hero__copy">
+                  <h1 id="hero-heading"><span>{copy.hero.headlineFirst}</span><span>{copy.hero.headlineSecond}</span></h1>
+                </div>
+                <div className="hero__details">
+                  <p className="hero__description">{copy.hero.description}</p>
+                  <div className="hero__actions">
+                    <Button href="#kontakt">{copy.hero.quote}</Button>
+                    <Button href="#leistungen" variant="secondary" className="hero__secondary">{copy.hero.services}</Button>
+                  </div>
                 </div>
               </div>
             </div>
