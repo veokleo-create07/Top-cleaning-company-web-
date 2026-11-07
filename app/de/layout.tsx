@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "TopClean Gebäudeservice | Gebäudereinigung in Lübeck",
   description:
     "Professionelle Reinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung.",
-  alternates: { canonical: "/de" },
+  alternates: { canonical: "/" },
   openGraph: {
     title: "TopClean Gebäudeservice | Gebäudereinigung in Lübeck",
     description:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     siteName: "TopClean Gebäudeservice",
-    url: "/de",
+    url: "/",
   },
 };
 

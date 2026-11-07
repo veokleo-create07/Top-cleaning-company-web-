@@ -5,16 +5,16 @@ import "../globals.css";
 
 export const metadata: Metadata = {
   ...sharedMetadata,
-  title: "TopClean Building Services | Commercial Cleaning in Lübeck",
+  title: "TopClean Gebäudeservice | Gebäudereinigung in Lübeck",
   description:
-    "Professional cleaning for businesses, medical practices and properties in Lübeck and the surrounding area.",
+    "Professionelle Reinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "TopClean Building Services | Commercial Cleaning in Lübeck",
+    title: "TopClean Gebäudeservice | Gebäudereinigung in Lübeck",
     description:
-      "Professional cleaning for businesses, medical practices and properties in Lübeck and the surrounding area.",
+      "Professionelle Reinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung.",
     type: "website",
-    locale: "en_US",
+    locale: "de_DE",
     siteName: "TopClean Gebäudeservice",
     url: "/",
   },
@@ -24,7 +24,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body>{children}</body>
     </html>
   );

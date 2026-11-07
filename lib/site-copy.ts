@@ -18,14 +18,15 @@ export const siteCopy = {
       mobileLabel: "Mobile navigation",
     },
     hero: {
+      eyebrow: "Commercial cleaning in Lübeck & the surrounding area",
       headlineFirst: "Clean spaces.",
-      headlineSecond: "A strong impression.",
+      headlineSecond: "Strong impressions.",
       description:
-        "Professional cleaning for businesses, medical practices and properties in Lübeck and the surrounding area — reliable, thorough and tailored to your needs.",
+        "Reliable cleaning for offices, medical practices and managed properties in Lübeck and the surrounding area.",
       quote: "Request a free quote",
-      services: "Our services",
-      imageAlt: "A cleaner caring for the floor of a bright, modern commercial property",
-      imageCaption: "Illustrative demo image · no TopClean staff pictured",
+      services: "Explore our services",
+      imageAlt: "Illustrative photo of a cleaning professional wiping glass in a sunlit modern office",
+      imageCaption: "Illustrative cleaning photo",
     },
     company: {
       headlineFirst: "Clean spaces start",
@@ -275,14 +276,15 @@ export const siteCopy = {
       mobileLabel: "Mobile Navigation",
     },
     hero: {
+      eyebrow: "Gebäudereinigung in Lübeck & Umgebung",
       headlineFirst: "Saubere Räume.",
-      headlineSecond: "Ein starker Auftritt.",
+      headlineSecond: "Starker Eindruck.",
       description:
-        "Professionelle Reinigung für Unternehmen, Praxen und Immobilien in Lübeck und Umgebung – zuverlässig, gründlich und individuell abgestimmt.",
+        "Zuverlässige Reinigung für Büros, Praxen und Immobilien in Lübeck und Umgebung.",
       quote: "Kostenloses Angebot anfordern",
-      services: "Unsere Leistungen",
-      imageAlt: "Reinigungskraft pflegt den Boden in einer hellen, modernen Gewerbeimmobilie",
-      imageCaption: "Illustrative Demoaufnahme · keine TopClean-Mitarbeitenden abgebildet",
+      services: "Leistungen entdecken",
+      imageAlt: "Illustrative Aufnahme einer Reinigungskraft, die in einem sonnigen, modernen Büro Glasflächen reinigt",
+      imageCaption: "Illustrative Reinigungsaufnahme",
     },
     company: {
       headlineFirst: "Sauberkeit beginnt",

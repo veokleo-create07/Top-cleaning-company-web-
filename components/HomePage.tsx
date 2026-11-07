@@ -43,8 +43,9 @@ export function HomePage({ locale }: HomePageProps) {
       <HeroPanelScrollTransition
         hero={
           <>
-            <section className="hero page-shell" aria-labelledby="hero-heading">
+            <section className="hero" aria-labelledby="hero-heading">
               <div className="hero__copy">
+                <p className="hero__eyebrow">{copy.hero.eyebrow}</p>
                 <h1 id="hero-heading">{copy.hero.headlineFirst}<br /><span>{copy.hero.headlineSecond}</span></h1>
                 <p className="hero__description">{copy.hero.description}</p>
                 <div className="hero__actions">
@@ -55,16 +56,13 @@ export function HomePage({ locale }: HomePageProps) {
 
               <figure className="hero__visual">
                 <Image
-                  src="/images/hero-cleaning.jpg"
+                  src="/images/hero-office-glass-cleaning.jpg"
                   alt={copy.hero.imageAlt}
                   fill
                   priority
-                  sizes="(max-width: 760px) 100vw, (max-width: 1200px) 54vw, 54vw"
+                  sizes="(max-width: 1024px) 100vw, 55vw"
                   className="hero__image"
                 />
-                <figcaption className="hero__caption">
-                  {copy.hero.imageCaption}
-                </figcaption>
               </figure>
             </section>
           </>
