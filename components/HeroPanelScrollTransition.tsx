@@ -68,7 +68,7 @@ export function HeroPanelScrollTransition({ hero, introduction }: HeroPanelScrol
       );
       ScrollTrigger.create({
         trigger: heroElement,
-        start: "top top",
+        start: "top top+=72px",
         end: () => `+=${panelTravel()}`,
         pin: heroElement,
         pinSpacing: false,

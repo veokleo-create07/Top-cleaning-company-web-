@@ -51,11 +51,11 @@ export function HomePage({ locale }: HomePageProps) {
                 className="hero__image"
               />
             </figure>
-            <p className="hero__display" aria-hidden="true">TOP CLEAN</p>
+            <p className="hero__display" aria-hidden="true">TOPCLEAN</p>
             <div className="hero__shade" aria-hidden="true" />
             <div className="hero__content">
               <div className="hero__copy">
-                <h1 id="hero-heading">{copy.hero.headlineFirst} <span>{copy.hero.headlineSecond}</span></h1>
+                <h1 id="hero-heading"><span>{copy.hero.headlineFirst}</span><span>{copy.hero.headlineSecond}</span></h1>
               </div>
               <div className="hero__details">
                 <p className="hero__description">{copy.hero.description}</p>
@@ -65,6 +65,9 @@ export function HomePage({ locale }: HomePageProps) {
                 </div>
               </div>
             </div>
+            <ul className="hero__service-strip" aria-label={locale === "de" ? "Reinigungsleistungen" : "Cleaning services"}>
+              {copy.hero.serviceStrip.map((item) => <li key={item}>{item}</li>)}
+            </ul>
           </section>
         }
         introduction={<CompanyIntroduction locale={locale} />}

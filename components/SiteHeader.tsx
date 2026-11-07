@@ -10,6 +10,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   const links = [
     { href: "#leistungen", label: copy.services },
     { href: "#unternehmen", label: copy.company },
+    { href: "#kundenstimmen", label: copy.references },
     { href: "#kontakt", label: copy.contact },
   ];
 
@@ -38,7 +39,8 @@ export function SiteHeader({ locale }: { locale: Locale }) {
         <LanguageSwitch locale={locale} />
 
         <Button href="#kontakt" className="header-cta">
-          {copy.quote}
+          <span className="header-cta__desktop">{copy.quote}</span>
+          <span className="header-cta__mobile">{copy.quoteShort}</span>
         </Button>
 
         <MobileNavigation

@@ -10,8 +10,10 @@ export const siteCopy = {
     navigation: {
       services: "Services",
       company: "About us",
+      references: "References",
       contact: "Contact",
-      quote: "Request a quote",
+      quote: "Request a free quote",
+      quoteShort: "Get a quote",
       menu: "Menu",
       openMenu: "Open menu",
       mainLabel: "Main navigation",
@@ -25,6 +27,7 @@ export const siteCopy = {
       quote: "Request a free quote",
       services: "Explore our services",
       imageAlt: "Illustrative photo of a cleaning professional wiping glass in a sunlit modern office",
+      serviceStrip: ["Office & commercial cleaning", "Medical practice cleaning", "Holiday apartments & properties"],
     },
     company: {
       headlineFirst: "Clean spaces start",
@@ -260,9 +263,11 @@ export const siteCopy = {
     },
     navigation: {
       services: "Leistungen",
-      company: "Unternehmen",
+      company: "Über uns",
+      references: "Referenzen",
       contact: "Kontakt",
-      quote: "Angebot anfragen",
+      quote: "Kostenloses Angebot",
+      quoteShort: "Angebot",
       menu: "Menü",
       openMenu: "Menü öffnen",
       mainLabel: "Hauptnavigation",
@@ -276,6 +281,7 @@ export const siteCopy = {
       quote: "Kostenloses Angebot anfordern",
       services: "Leistungen ansehen",
       imageAlt: "Illustrative Aufnahme einer Reinigungskraft, die in einem sonnigen, modernen Büro Glasflächen reinigt",
+      serviceStrip: ["Büro- & Gewerbereinigung", "Praxisreinigung", "Ferienwohnungen & Immobilien"],
     },
     company: {
       headlineFirst: "Sauberkeit beginnt",
